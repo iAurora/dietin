@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-chevron-left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-chevron-left" fill-rule="nonzero" fill="#3A3F4E">
+            <polygon id="icon-chevron-up" transform="translate(11.705000, 12.000000) rotate(-90.000000) translate(-11.705000, -12.000000) " points="7.115 15.705 5.705 14.295 11.705 8.295 17.705 14.295 16.295 15.705 11.705 11.125"></polygon>
+        </g>
+    </g>
+</svg>

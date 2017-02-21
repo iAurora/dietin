@@ -1,0 +1,22 @@
+.logo {
+  padding-bottom: 6px;
+
+  transition: opacity .3s ease;
+}
+
+.logo--header {
+  height: $v-main;
+  margin-right: 48px;
+}
+
+
+.logo__image {
+  width: 78px;
+  height: 17px;
+
+  fill: white;
+}
+
+.logo:hover {
+  opacity: .8;
+}

@@ -1,0 +1,129 @@
+.recipes-grid__container {
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recipe-card {
+  position: relative;
+
+  overflow: hidden;
+
+  max-width: 240px;
+  margin-top: 32px;
+
+  cursor: pointer;
+  transition: all .3s linear;
+
+  border: 1px solid $sep-light;
+  background: white;
+  box-shadow: 0 3px 0 0 $bg-cold;
+}
+
+.recipe-card:hover {
+  box-shadow: $shadow-big;
+}
+
+
+.recipe-thumb__wrapper {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.recipe-thumb__image {
+  max-width: 100%;
+  height: auto;
+
+  transition: all .3s linear;
+  transform: perspective(1px) scale(1);
+}
+
+.recipe-thumb__gradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 100%;
+  height: 100%;
+
+  transition: all .3s linear;
+
+  background-image: linear-gradient(-180deg, rgba(50,59,60,.00) 0%, rgba(22,27,28,.69) 100%);
+}
+
+.recipe-card:hover .recipe-thumb__gradient {
+  opacity: .7;
+}
+
+
+.recipe-thumb__label {
+  font-size: 11px;
+
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  left: 10px;
+
+  display: block;
+
+  padding: 2px 8px 4px;
+
+  transition: all .3s ease;
+
+  color: white;
+  border-radius: 2px;
+  background-color: $support-dos;
+}
+
+.recipe-thumb__label:hover {
+  background-color: $support-dos-bold;
+}
+
+.recipe-thumb__heading {
+  position: absolute;
+  z-index: 1;
+  right: 16px;
+  bottom: 4px;
+  left: 16px;
+}
+
+.recipe-nutrients {
+  font-size: 13px;
+
+  margin: 0;
+  padding: 12px 16px 24px;
+
+  list-style: none;
+}
+
+.recipe-nutrients__unit {
+  font-size: 11px;
+  font-style: normal;
+}
+
+.recipe-nutrients__value {
+  font-weight: $bold;
+}
+
+.recipe-nutrients__item {
+  display: flex;
+
+  padding-top: 8px;
+
+  border-bottom: 1px dotted $sep-light;
+
+  justify-content: space-between;
+}
+
+.over {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+
+  width: 100%;
+  height: 100%;
+}

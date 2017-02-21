@@ -1,0 +1,48 @@
+.js-header-up {
+  top: -$v-main;
+}
+
+.js-header-down {
+}
+
+
+
+.js-dropdown,
+.js-search,
+.js-icon-close,
+.js-icon-up {
+  display: none;
+}
+
+// pathologies
+
+.js-dropdown.is-open {
+  display: block;
+}
+
+// search
+
+.js-search-btn.is-open {
+  display: flex;
+
+  background-color: $primary-bright;
+  .js-icon-search {
+    display: none;
+  }
+  .js-icon-close {
+    display: block;
+  }
+}
+
+.js-search.is-open {
+  display: block;
+}
+
+.js-dropdown-btn.is-open {
+  .js-icon-down {
+    display: none;
+  }
+  .js-icon-up {
+    display: block;
+  }
+}

@@ -1,0 +1,23 @@
+{% set pageName = "recipes" %}
+{% set pathology = "Онкологические заболевания" %}
+{% set title = 'Рецепты - Diet In' %}
+{% set description = 'Описание страницы' %}
+{% extends 'base.njk' %}
+
+{% block content -%}
+
+{% include "partials/p-section-banner.njk" %}
+
+<div class="section-container width-container">
+
+  <h1 class="section-heading">Рецепты</h1>
+
+  {% include "partials/p-recipes-filter.njk" %}
+
+  {% include "partials/p-recipes-grid.njk" %}
+
+  {% include "partials/p-pagination.njk" %}
+
+</div>
+
+{%- endblock %}

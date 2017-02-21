@@ -1,0 +1,63 @@
+<header class="top-header js-header js-header-down">
+
+    <div class="top-header__inner width-container">
+
+      <div class="logo logo--header">
+        <a class="link--full" href="/" title="Diet In">
+          <svg class="logo__image">
+            <use xlink:href="svg/sprite.svg#logo"></use>
+          </svg>
+      </a>
+      </div>
+
+      {% include "partials/p-pathologies-nav.njk" %}
+
+      <div class="filler"></div>
+
+      <div class="service-nav">
+        Обратная связь
+      </div>
+
+      <div class="search__btn js-search-btn">
+        <svg class="icon js-icon-search">
+          <use xlink:href="svg/sprite.svg#icon-search"></use>
+        </svg>
+        <svg class="icon js-icon-close">
+          <use xlink:href="svg/sprite.svg#icon-close"></use>
+        </svg>
+      </div>
+
+
+    </div>
+
+  {#  Search  #}
+
+  <div class="search__wrapper">
+
+    <div class="search js-search">
+    <span>тут будет большой удобный поиск</span>
+
+      <form id="searchForm" class="search__form width-container" method="post">
+
+        <input type="text" class="search__field" id="searchField"/>
+
+        <input type="submit" value="Искать" id="submitButton" />
+
+        <div class="search__in">
+            <input type="radio" name="check" value="site" id="searchSite" checked />
+            <label for="searchSite" id="siteNameLabel">В разделе</label>
+
+            <input type="radio" name="check" value="web" id="searchWeb" />
+            <label for="searchWeb">По всему сайту</label>
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  {# / Search #}
+
+
+</header>

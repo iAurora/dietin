@@ -1,0 +1,48 @@
+// Test
+
+$t-default-size: 16;
+
+$sans-serif: 'Open Sans', Helvetica, Verdana, sans-serif;
+$serif: Georgia, 'Times New Roman', serif;
+
+$light: 300;
+$normal: 400;
+$semibold: 600;
+$bold: 700;
+
+// Colors
+
+$primary: #81c5d8;
+$primary-link: #2ca1c1;
+$primary-bright: #abdce9;
+
+$support-uno: #b99d73;
+$support-dos: #ff675b;
+$support-dos-bold: #f14c3f;
+$support-tres: #8ac143;
+
+$text-black: #3a3f4e;
+$text-normal: #6a6e7b;
+$text-pale: #b5b7bd;
+
+$sep-dark: #d8d9dc;
+$sep-light: #edeff3;
+
+$bg-cold: #f6f7f9;
+$bg-warm: #faf9f8;
+$bg-cold-faded: lighten( $bg-cold, 2% );
+$bg-cold-vivid: #ffffff;
+
+$tint: rgba(255,255,255,.2);
+
+
+
+// Shadows
+
+$shadow-big: 0 2px 11px 0 rgba(66,137,157,.22);
+
+
+
+// Dimensions
+
+$v-main: 80px;

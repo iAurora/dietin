@@ -1,0 +1,31 @@
+body {
+  padding-top: $v-main;
+}
+
+.top-header {
+  line-height: $v-main;
+
+  position: fixed;
+  z-index: 700;
+  top: 0;
+
+  width: 100%;
+  height: $v-main;
+
+  user-select: none;
+  transition: top .3s ease-in-out;
+
+  color: white;
+  background-color: #84c4d5;
+}
+
+.top-header__inner {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.filler {
+  flex-grow: 1;
+}

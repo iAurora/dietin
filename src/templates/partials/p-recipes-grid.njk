@@ -1,0 +1,77 @@
+{% set recipeGrid = {
+  'Tарелка со множеством вкусных вещей' : 'Супы',
+  'Блинчики с мёдом' : 'Дессерты',
+  'Салат из тигровых креветок' : 'Салаты',
+  'Сэндвичи с помидорками' : 'Закуски',
+  'Поджаристые тосты с джемом или какой-то другой вкусной штукой' : 'Закуски',
+  'Вкусные булочки' : 'Выпечка',
+  'Гарнир из зелёного горошка' : 'Вторые блюда',
+  'Мороженное в красном соусе' : 'Дессерты',
+  'Шоколадные капкейки' : 'Дессерты',
+  'Бананы' : 'Дессерты',
+  'Макаруны' : 'Дессерты',
+  'Свежие вкусные овощи' : 'Салаты'
+} %}
+
+
+
+<div class="recipes-grid__container">
+
+{% for title, label in recipeGrid %}
+
+  <div class="recipe-card">
+
+
+    <div class="recipe-thumb__wrapper">
+      <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-{{ loop.index }}.jpg" />
+      <div class="recipe-thumb__gradient"></div>
+      <a class="recipe-thumb__label link--stealth" href="#0">{{ label | lower }}</a>
+      <h2 class="recipe-thumb-heading recipe-thumb__heading">{{ title }}</h2>
+    </div>
+    <a href="#" class="over"></a>
+
+
+    <ul class="recipe-nutrients">
+
+      <li class="recipe-nutrients__item">
+        <span class="recipe-nutrients__key">Энергия
+          <em class="recipe-nutrients__unit">(ккал)</em>
+        </span>
+        <span class="recipe-nutrients__value">250</span>
+      </li>
+
+      <li class="recipe-nutrients__item">
+        <span class="recipe-nutrients__key">Белок
+          <em class="recipe-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-nutrients__value">30</span>
+      </li>
+
+      <li class="recipe-nutrients__item">
+        <span class="recipe-nutrients__key">Фосфор
+          <em class="recipe-nutrients__unit">(мг)</em>
+        </span>
+        <span class="recipe-nutrients__value">80</span>
+      </li>
+
+      <li class="recipe-nutrients__item">
+        <span class="recipe-nutrients__key">Натрий
+          <em class="recipe-nutrients__unit">(мг)</em>
+        </span>
+        <span class="recipe-nutrients__value">89</span>
+      </li>
+
+      <li class="recipe-nutrients__item">
+        <span class="recipe-nutrients__key">Калий
+          <em class="recipe-nutrients__unit">(мг)</em>
+        </span>
+        <span class="recipe-nutrients__value">612</span>
+      </li>
+
+    </ul>
+
+  </div> {# recipe-card #}
+
+{% endfor %}
+
+</div> {# recipes-grid__container #}

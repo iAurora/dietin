@@ -1,0 +1,25 @@
+.recipes-filter {
+  font-size: 15px;
+  line-height: 56px;
+
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  border-top: 3px solid $sep-dark;
+  border-bottom: 1px solid $sep-light;
+
+  align-content: center;
+  justify-content: flex-start;
+}
+
+.recipes-filter__item {
+  margin-right: 16px;
+}
+
+.recipes-filter__item--chosen {
+  font-weight: $semibold;
+}

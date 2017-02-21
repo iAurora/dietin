@@ -1,0 +1,16 @@
+{
+  "images": [
+    {
+      "src": "http://placehold.it/400x150",
+      "alt": "Image one alt text 2"
+    },
+    {
+      "src": "http://placehold.it/450x150",
+      "alt": "Image one alt text 3"
+    },
+    {
+      "src": "http://placehold.it/500x150",
+      "alt": "Image two alt text 222"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+.section-banner {
+  position: relative;
+
+  height: 240px;
+
+  background-image: url('../img/sb-recipes.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: auto 320px;
+}
+
+.section-banner__gradient {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(-180deg, rgba(0,0,0,.34) 75%, rgba(50,59,60,.70) 100%);
+}
+
+.section-banner__inner {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+
+  justify-content: flex-end;
+}
