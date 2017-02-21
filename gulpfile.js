@@ -9,14 +9,18 @@ var gulp = require('gulp'),
     data = require('gulp-data'),
     nunjucksRender = require('gulp-nunjucks-render'),
     csscomb = require('gulp-csscomb'),
+    htmlbeautify = require('gulp-html-beautify'),
     plumber = require('gulp-plumber'),
     notify = require('gulp-notify'),
     rigger = require('gulp-rigger'),
     uglify = require('gulp-uglify'),
     htmlmin = require('gulp-htmlmin'),
     imagemin = require('gulp-imagemin'),
+    svgSprite = require('gulp-svg-sprite'),
     cache = require('gulp-cached'),
     del = require('del'),
+    fs = require('fs'),
+    path = require('path'),
     browserSync = require('browser-sync').create();
 
 
@@ -41,6 +45,21 @@ var supportedBrowsers = [
   'ie >= 9'
   ];
 
+// SVG Config
+var spriteConfig = {
+  mode: {
+    symbol: { // symbol mode to build the SVG
+      dest: 'svg',  // destination folder
+      sprite: 'sprite.svg', //sprite name
+      example: true // Build sample page
+    }
+  },
+  svg: {
+    xmlDeclaration: false, // strip out the XML attribute
+    doctypeDeclaration: false // don't include the !DOCTYPE declaration
+  }
+};
+
 // BrowserSync server config
 var serverConfig = {
   server: { baseDir: './dist' },
@@ -54,7 +73,7 @@ var serverConfig = {
 
 // beautify source files on save
 gulp.task('comb', function() {
-  return gulp.src(['src/sass/**/*.{css,scss}', '!src/sass/main.scss'])
+  return gulp.src(['src/sass/**/*.{css,scss}', '!src/sass/main.scss', '!src/sass/vendor/*'])
     .pipe(plumber({ errorHandler: onError }))
     .pipe(cache('combing'))
     .pipe(csscomb())
@@ -63,7 +82,7 @@ gulp.task('comb', function() {
 
 // compile, preffix and minify with sourcemaps
 gulp.task('sass', ['comb'], function() {
-  return gulp.src('src/sass/!(_)*.{css,scss}')
+  return gulp.src('src/sass/main.scss')
     .pipe(plumber({ errorHandler: onError }))
     .pipe(sourcemaps.init())
       .pipe(sass())
@@ -90,15 +109,11 @@ function requireUncached(obj) {
 gulp.task('render', function() {
   return gulp.src('src/templates/pages/**/*.{njk,html}')
     .pipe(plumber({ errorHandler: onError }))
-    .pipe(data(function() {
-      return requireUncached('./src/templates/data/data.json')
-    }))
+      .pipe(data(function() {
+        return requireUncached('./src/templates/data/data.json')
+      }))
     .pipe(nunjucksRender({
       path: ['src/templates/']
-    }))
-    .pipe(htmlmin({
-      removeComments: true,
-      collapseWhitespace: true
     }))
     .pipe(gulp.dest('dist'))
     .pipe(notify({message: 'Templates done!'}));
@@ -139,6 +154,16 @@ gulp.task('img', function () {
 
 
 
+// *** SVG ***
+
+gulp.task('svg-sprite', function() {
+  return gulp.src('src/svg/**/*.svg')
+    .pipe(svgSprite(spriteConfig))
+    .pipe(gulp.dest('dist'));
+});
+
+
+
 // *** FONTS ***
 
 gulp.task('fonts', function() {
@@ -161,12 +186,13 @@ gulp.task('extras', function() {
 
 // *** DEFAULT SERVE & WATCH ***
 
-gulp.task('default', ['sass', 'render', 'js', 'img', 'fonts', 'extras'], function () {
+gulp.task('default', ['sass', 'render', 'js', 'img', 'svg-sprite','fonts', 'extras'], function () {
   browserSync.init(serverConfig);
   gulp.watch('src/sass/**/*.{css,scss}', ['sass']);
   gulp.watch('src/js/**/*.js', ['js']).on('change', browserSync.reload);
   gulp.watch('src/templates/**/*.{html,njk,json}', ['render-watch']).on('change', browserSync.reload);
   gulp.watch('src/img/**/*', ['img']);
+  gulp.watch('src/svg/**/*', ['svg-sprite']);
   gulp.watch('src/fonts/**/*', ['fonts']);
   gulp.watch('src/extras/**/*', ['extras']);
 });
@@ -180,6 +206,6 @@ gulp.task('clean', function() {
     return del(['dist/**/*']);
 });
 
-gulp.task('build', ['sass', 'render', 'js', 'img', 'fonts', 'extras'], function() {
+gulp.task('build', ['sass', 'render', 'js', 'img', 'svg-sprite', 'fonts', 'extras'], function() {
     return console.log('Build Complete!');
 });
