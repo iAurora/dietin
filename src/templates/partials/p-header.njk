@@ -33,28 +33,14 @@
   {#  Search  #}
 
   <div class="search__wrapper">
-
     <div class="search js-search">
-    <span>тут будет большой удобный поиск</span>
 
-      <form id="searchForm" class="search__form width-container" method="post">
-
-        <input type="text" class="search__field" id="searchField"/>
-
-        <input type="submit" value="Искать" id="submitButton" />
-
-        <div class="search__in">
-            <input type="radio" name="check" value="site" id="searchSite" checked />
-            <label for="searchSite" id="siteNameLabel">В разделе</label>
-
-            <input type="radio" name="check" value="web" id="searchWeb" />
-            <label for="searchWeb">По всему сайту</label>
-        </div>
-
+      <form id="searchForm" class="search__form width-container" method="get" role="search">
+        <input type="text" class="search__field" placeholder="Что вас интересует?" id="search"/>
+        <input type="submit" class="search__submit" value="Найти" id="submit" />
       </form>
 
     </div>
-
   </div>
 
   {# / Search #}

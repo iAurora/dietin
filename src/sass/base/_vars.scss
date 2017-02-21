@@ -13,7 +13,8 @@ $bold: 700;
 // Colors
 
 $primary: #81c5d8;
-$primary-link: #2ca1c1;
+$primary-link: #4da4bc;
+$primary-link-faded: #49afcb;
 $primary-bright: #abdce9;
 
 $support-uno: #b99d73;
@@ -31,7 +32,8 @@ $sep-light: #edeff3;
 $bg-cold: #f6f7f9;
 $bg-warm: #faf9f8;
 $bg-cold-faded: lighten( $bg-cold, 2% );
-$bg-cold-vivid: #ffffff;
+$bg-vivid: #e9fafe;
+$bg-vivid-light: #f5fdff;
 
 $tint: rgba(255,255,255,.2);
 
