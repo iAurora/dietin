@@ -1,4 +1,4 @@
-/* MY RULES */
+// Mobile menu toggle
 
 .mobile-nav__btn {
   display: flex;
@@ -24,118 +24,96 @@
 }
 
 
-/* +++++++++ */
+// Mobile menu
 
+.mobile-nav {
+  font-size: 14px;
 
-.mobile-nav a,
-.mobile-nav a:hover {
-  text-decoration: none;
+  position: relative;
+
+  border-bottom: 4px solid $primary;
 }
-.mobile-nav ul,
-.mobile-nav ol {
+
+.mobile-nav__list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
-
-/*------------------------------------*\
-    Flaunt JS Navigation
-\*------------------------------------*/
-
-.nav {
-  position: relative;
-
-  display: inline-block;
-
-  width: 100%;
-  padding: 50px 0 0;
-}
-.nav-list {
-  display: none;
-}
-.nav-item {
+.mobile-nav__item {
   position: relative;
 
   width: 100%;
 }
-.nav-item a {
+
+.mobile-nav__link,
+.mobile-nav__sublink {
   display: block;
 
   padding: 15px;
 
-  color: #ffffff;
-  border-bottom: 1px solid #8b2870;
-  background: #7a1e61;
+  text-decoration: none;
+
+  color: $text-black;
+  border-bottom: 1px solid #e1f2f5;
+  background: #f5fcfe;
 }
-.nav-item > a:hover {
-  background: #822368;
+
+.mobile-nav__link:hover {
+  background: white;
 }
-.nav-item:hover .nav-submenu {
+
+.mobile-nav__item:hover .mobile-subnav {
   display: none;
 }
-/* Navigation submenu */
-.nav-submenu {
+
+.mobile-subnav {
   position: static;
 
   display: none;
 
   width: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
-.nav-submenu-item a {
+
+.mobile-nav__sublink {
   display: block;
 
   padding: 15px;
 
-  border-bottom: 1px solid #9a337e;
-  background: #8b2770;
+  border-bottom: 1px solid #d2e9ed;
+  border-left: 16px solid #f5fcfe;
+  background: #e3f5fb;
 }
-.nav-submenu-item a:hover {
-  background: #932c77;
+
+.mobile-nav__sublink:hover {
+  background: white;
 }
-/* Mobile navigation */
-.nav-mobile {
+
+.mobile-subnav-btn {
   position: absolute;
   top: 0;
   right: 0;
 
-  display: block;
-
-  width: 50px;
-  height: 50px;
-
-  cursor: pointer;
-
-  background: #3d3d3b url(../img/nav.svg) no-repeat center center;
-  background-size: 18px;
-}
-
-
-/* Mobile navigation, clickable area for revealing <ul> */
-.nav-click {
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  display: block;
+  display: flex;
 
   width: 50px;
   height: 49px;
 
   cursor: pointer;
 
-  border-left: 1px solid #8b2870;
-}
-.nav-click i {
-  display: block;
+  color: $primary;
+  border-left: 1px solid #e1f2f5;
 
-  width: 48px;
-  height: 48px;
+  align-items: center;
+  justify-content: center;
+}
 
-  background: url(../img/drop.svg) no-repeat center center;
-  background-size: 20px;
-}
-.nav-click:hover {
-  background-color: #6e1656;
-}
-.nav-rotate {
-  transform: rotate(180deg);
+.mobile-subnav-btn:hover {
+  color: white;
+  background-color: $primary;
 }

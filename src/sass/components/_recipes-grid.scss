@@ -36,9 +36,6 @@
 .recipe-thumb__image {
   max-width: 100%;
   height: auto;
-
-  transition: all .3s linear;
-  transform: perspective(1px) scale(1);
 }
 
 .recipe-thumb__gradient {
@@ -118,7 +115,7 @@
   justify-content: space-between;
 }
 
-.over {
+.recipe-card__link {
   position: absolute;
   z-index: 5;
   top: 0;

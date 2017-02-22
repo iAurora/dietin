@@ -2,19 +2,26 @@
   top: -$v-main;
 }
 
-.js-header-down {
-}
-
-
-
 .js-dropdown,
 .js-search,
+.js-mobile-nav,
+.js-subnav-up,
 .js-icon-close,
+.js-icon-menu-close,
 .js-icon-up {
   display: none;
 }
 
 // pathologies
+
+.js-dropdown-btn.is-open {
+  .js-icon-down {
+    display: none;
+  }
+  .js-icon-up {
+    display: block;
+  }
+}
 
 .js-dropdown.is-open {
   display: block;
@@ -25,7 +32,6 @@
 .js-search-btn.is-open {
   display: flex;
 
-  background-color: $primary-bright;
   .js-icon-search {
     display: none;
   }
@@ -38,11 +44,32 @@
   display: block;
 }
 
-.js-dropdown-btn.is-open {
-  .js-icon-down {
+// mobile nav
+
+.js-mobile-nav-btn.is-open {
+  display: flex;
+
+  .js-icon-menu {
     display: none;
   }
-  .js-icon-up {
+  .js-icon-menu-close {
+    display: block;
+  }
+}
+
+
+.js-mobile-nav.is-open {
+  display: block;
+}
+
+
+.js-mobile-subnav-btn.is-open {
+  display: flex;
+
+  .js-subnav-down {
+    display: none;
+  }
+  .js-subnav-up {
     display: block;
   }
 }
