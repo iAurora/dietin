@@ -27,14 +27,20 @@
 // Mobile menu
 
 .mobile-nav {
-  font-size: 14px;
+  font-size: 15px;
 
-  position: relative;
+  position: absolute;
+  z-index: 200500;
+  top: $v-main;
 
-  border-bottom: 4px solid $primary;
+  width: 100%;
+
+  border-bottom: 4px solid $support-uno;
 }
 
 .mobile-nav__list {
+  position: relative;
+
   margin: 0;
   padding: 0;
 
@@ -56,12 +62,15 @@
   text-decoration: none;
 
   color: $text-black;
-  border-bottom: 1px solid #e1f2f5;
-  background: #f5fcfe;
+  // border-bottom: 1px solid #e1f2f5;
+  // background: #f5fcfe;
+  border-bottom: 1px solid $sep-light;
+  background: white;
 }
 
 .mobile-nav__link:hover {
-  background: white;
+  color: $primary-link;
+  background: $bg-cold-faded;
 }
 
 .mobile-nav__item:hover .mobile-subnav {
@@ -84,14 +93,19 @@
   display: block;
 
   padding: 15px;
+  // border-bottom: 1px solid #d2e9ed;
+  // border-left: 16px solid #f5fcfe;
+  // background: #e3f5fb;
 
-  border-bottom: 1px solid #d2e9ed;
-  border-left: 16px solid #f5fcfe;
-  background: #e3f5fb;
+  border-bottom: 1px solid $sep-light;
+  border-left: 4px solid $primary;
+  background: $bg-cold;
 }
 
 .mobile-nav__sublink:hover {
+  color: $primary-link;
   background: white;
+  background: $sep-light;
 }
 
 .mobile-subnav-btn {
