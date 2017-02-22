@@ -3,11 +3,18 @@
 
   height: 240px;
 
-  background-image: url('../img/sb-recipes.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top center;
   background-size: auto 320px;
+}
+
+.section-banner--recipes {
+  background-image: url('../img/sb-recipes.jpg');
+}
+
+.section-banner--articles {
+  background-image: url('../img/sb-articles.jpg');
 }
 
 .section-banner__gradient {

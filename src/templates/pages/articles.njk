@@ -1,0 +1,34 @@
+{% set pageName = "articles" %}
+{% set pathology = "Онкологические заболевания" %}
+{% set title = 'Статьи - Diet In' %}
+{% set description = 'Описание страницы' %}
+{% extends 'base.njk' %}
+
+{% block content -%}
+
+{% include "partials/section-banner.njk" %}
+
+<div class="section-container width-container">
+
+  <h1 class="section-heading">Статьи</h1>
+
+  <div class="articles-intro">
+    <p>В этом разделе вы найдёте подборку научно-популярных и опубликованных в специализированных научных жураналах статей и материалов, которые, мы надеемся, помогут вам лучше понять то особое состояние, с которым живёте вы, кто-то из ваших близких или пациентов. Этот текст – заглушка.</p>
+  </div>
+
+  <ul class="article-list">
+    {# articles in data/data.json #}
+    {% for article in articles %}
+    <li class="card-base article-list__item"><a class="article-list__link link--full" href="#">{{ article }}</a></li>
+    {% endfor %}
+    {# doubling for amount #}
+    {% for article in articles %}
+    <li class="card-base article-list__item"><a class="article-list__link link--full" href="#">{{ article }}</a></li>
+    {% endfor %}
+  </ul>
+
+  {% include "partials/pagination.njk" %}
+
+</div>
+
+{%- endblock %}
