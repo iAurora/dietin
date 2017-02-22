@@ -1,0 +1,35 @@
+<div class="recipes-grid__container">
+
+  {# recipes in data/data.json #}
+  {% for recipe in recipes %}
+
+  <div class="recipe-card">
+
+    <div class="recipe-thumb__wrapper">
+      <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-{{ loop.index }}.jpg" />
+      <div class="recipe-thumb__gradient"></div>
+      <a class="recipe-thumb__label link--stealth" href="#0">{{ recipe.type | lower }}</a>
+      <h2 class="recipe-thumb-heading recipe-thumb__heading">{{ recipe.title }}</h2>
+    </div>
+
+    <ul class="recipe-nutrients">
+
+      {# nutrient in data/data.json #}
+      {% for nutrient in nutrients %}
+      <li class="recipe-nutrients__item">
+        <span class="recipe-nutrients__key">{{ nutrient.name }}
+          <em class="recipe-nutrients__unit">({{ nutrient.unit }})</em>
+        </span>
+        <span class="recipe-nutrients__value">{{ nutrient.amount }}</span>
+      </li>
+      {% endfor %}
+
+    </ul>
+
+    <a href="#" class="recipe-card__link"></a>
+
+  </div>
+
+{% endfor %}
+
+</div>

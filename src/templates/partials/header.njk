@@ -2,6 +2,7 @@
 
     <div class="top-header__inner width-container">
 
+      {# Logo #}
       <div class="logo logo--header">
         <a class="link--full" href="/" title="Diet In">
           <svg class="logo__image">
@@ -10,14 +11,17 @@
       </a>
       </div>
 
-      {% include "partials/p-pathologies-nav.njk" %}
+      {# Pathologies dropdown #}
+      {% include "partials/pathologies-nav.njk" %}
 
       <div class="filler"></div>
 
+      {# Service menu #}
       <div class="service-nav">
         Обратная связь
       </div>
 
+      {# Search button #}
       <div class="search__btn js-search-btn">
         <svg class="icon js-icon-search">
           <use xlink:href="svg/sprite.svg#icon-search"></use>
@@ -27,10 +31,19 @@
         </svg>
       </div>
 
+      {# Mobile menu button #}
+      <div class="mobile-nav__btn js-mobile-nav-btn">
+        <svg class="icon js-icon-menu">
+          <use xlink:href="svg/sprite.svg#icon-menu"></use>
+        </svg>
+        <svg class="icon js-icon-menu-close">
+          <use xlink:href="svg/sprite.svg#icon-close"></use>
+        </svg>
+      </div>
 
     </div>
 
-  {#  Search  #}
+  {#  Search dropdown  #}
 
   <div class="search__wrapper">
     <div class="search js-search">
@@ -42,8 +55,5 @@
 
     </div>
   </div>
-
-  {# / Search #}
-
 
 </header>

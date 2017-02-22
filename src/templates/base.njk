@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700&amp;subset=cyrillic,greek" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700|Yanone+Kaffeesatz&amp;subset=cyrillic,greek" rel="stylesheet">
 
 </head>
 
@@ -19,11 +19,12 @@
     <p class="browserupgrade">Похоже, ваш браузер устарел. Для работы этого сайта требуется поддержка современных интернет-технологий. <a href="https://www.browser-update.org/ru/update.html">Обновите</a> браузер для комфортного и безопасного пользования Интернетом.</p>
   <![endif]-->
 
-  {% include "partials/p-header.njk" %}
+  {% include "partials/header.njk" %}
+  {% include "partials/mobile-nav.njk" %}
 
   {% block content %}{% endblock %}
 
-  {% include "partials/p-footer.njk" %}
+  {% include "partials/footer.njk" %}
 
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
