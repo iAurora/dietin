@@ -124,3 +124,20 @@
   width: 100%;
   height: 100%;
 }
+
+// responsive
+
+.gallery-grid {
+  margin-right: -12px;
+  margin-left: -12px;
+
+  > div {
+    margin: 0 12px;
+  }
+
+  .gallery-item {
+    margin-top: 24px;
+
+    flex-basis: calc(25% - 24px);
+  }
+}

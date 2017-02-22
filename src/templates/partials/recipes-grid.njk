@@ -1,9 +1,9 @@
-<div class="recipes-grid__container">
+<div class="recipes-grid__container gallery-grid">
 
   {# recipes in data/data.json #}
   {% for recipe in recipes %}
 
-  <div class="recipe-card">
+  <div class="recipe-card gallery-item">
 
     <div class="recipe-thumb__wrapper">
       <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-{{ loop.index }}.jpg" />
