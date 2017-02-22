@@ -1,0 +1,141 @@
+/* MY RULES */
+
+.mobile-nav__btn {
+  display: flex;
+
+  width: $v-main;
+  height: $v-main;
+
+  cursor: pointer;
+  transition: all .3s ease;
+
+  color: white;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-nav__btn:hover {
+  background-color: $tint;
+}
+
+.mobile-nav__btn.is-open {
+  background-color: $primary-bright;
+}
+
+
+/* +++++++++ */
+
+
+.mobile-nav a,
+.mobile-nav a:hover {
+  text-decoration: none;
+}
+.mobile-nav ul,
+.mobile-nav ol {
+  list-style: none;
+}
+
+
+/*------------------------------------*\
+    Flaunt JS Navigation
+\*------------------------------------*/
+
+.nav {
+  position: relative;
+
+  display: inline-block;
+
+  width: 100%;
+  padding: 50px 0 0;
+}
+.nav-list {
+  display: none;
+}
+.nav-item {
+  position: relative;
+
+  width: 100%;
+}
+.nav-item a {
+  display: block;
+
+  padding: 15px;
+
+  color: #ffffff;
+  border-bottom: 1px solid #8b2870;
+  background: #7a1e61;
+}
+.nav-item > a:hover {
+  background: #822368;
+}
+.nav-item:hover .nav-submenu {
+  display: none;
+}
+/* Navigation submenu */
+.nav-submenu {
+  position: static;
+
+  display: none;
+
+  width: 100%;
+}
+.nav-submenu-item a {
+  display: block;
+
+  padding: 15px;
+
+  border-bottom: 1px solid #9a337e;
+  background: #8b2770;
+}
+.nav-submenu-item a:hover {
+  background: #932c77;
+}
+/* Mobile navigation */
+.nav-mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: block;
+
+  width: 50px;
+  height: 50px;
+
+  cursor: pointer;
+
+  background: #3d3d3b url(../img/nav.svg) no-repeat center center;
+  background-size: 18px;
+}
+
+
+/* Mobile navigation, clickable area for revealing <ul> */
+.nav-click {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: block;
+
+  width: 50px;
+  height: 49px;
+
+  cursor: pointer;
+
+  border-left: 1px solid #8b2870;
+}
+.nav-click i {
+  display: block;
+
+  width: 48px;
+  height: 48px;
+
+  background: url(../img/drop.svg) no-repeat center center;
+  background-size: 20px;
+}
+.nav-click:hover {
+  background-color: #6e1656;
+}
+.nav-rotate {
+  transform: rotate(180deg);
+}
