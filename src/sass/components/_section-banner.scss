@@ -1,39 +1,103 @@
 .section-banner {
-  position: relative;
-
-  height: 240px;
-
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top center;
-  background-size: auto 320px;
+  display: none;
 }
 
-.section-banner--recipes {
-  background-image: url('../img/sb-recipes.jpg');
+@media screen and (min-width: 540px) {
+  .section-banner {
+    position: relative;
+
+    display: block;
+
+    height: 192px;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+  }
+
+  .section-banner--recipes {
+    background-image: url('../img/section-banners/sb-recipes-680x256.jpg');
+  }
+
+  .section-banner--articles {
+    background-image: url('../img/section-banners/sb-articles-680x256.jpg');
+  }
+
+  .section-banner__gradient {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(-180deg, rgba(0,0,0,.34) 75%, rgba(50,59,60,.70) 100%);
+  }
+
+  .section-banner__inner {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    justify-content: flex-end;
+  }
 }
 
-.section-banner--articles {
-  background-image: url('../img/sb-articles.jpg');
+
+@media screen and (min-width: 768px) {
+  .section-banner {
+    height: 240px;
+  }
 }
 
-.section-banner__gradient {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
+@media screen and (min-width: 680px) {
+  .section-banner--recipes {
+    background-image: url('../img/section-banners/sb-recipes-820x256.jpg');
+  }
 
-  width: 100%;
-  height: 100%;
-
-  background: linear-gradient(-180deg, rgba(0,0,0,.34) 75%, rgba(50,59,60,.70) 100%);
+  .section-banner--articles {
+    background-image: url('../img/section-banners/sb-articles-820x256.jpg');
+  }
 }
 
-.section-banner__inner {
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 768px) {
+  .section-banner--recipes {
+    background-image: url('../img/section-banners/sb-recipes-1200x320.jpg');
+  }
 
-  height: 100%;
+  .section-banner--articles {
+    background-image: url('../img/section-banners/sb-articles-1200x320.jpg');
+  }
+}
 
-  justify-content: flex-end;
+@media screen and (min-width: 1200px) {
+  .section-banner--recipes {
+    background-image: url('../img/section-banners/sb-recipes-1440x320.jpg');
+  }
+
+  .section-banner--articles {
+    background-image: url('../img/section-banners/sb-articles-1440x320.jpg');
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section-banner--recipes {
+    background-image: url('../img/section-banners/sb-recipes-1920x320.jpg');
+  }
+
+  .section-banner--articles {
+    background-image: url('../img/section-banners/sb-articles-1920x320.jpg');
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .section-banner--recipes {
+    background-image: url('../img/section-banners/sb-recipes-2560x320.jpg');
+  }
+
+  .section-banner--articles {
+    background-image: url('../img/section-banners/sb-articles-2560x320.jpg');
+  }
 }

@@ -11,7 +11,6 @@
 
   overflow: hidden;
 
-  max-width: 240px;
   margin-top: 32px;
 
   cursor: pointer;
@@ -83,7 +82,7 @@
 
 .recipe-thumb__heading {
   font-family: $sans-serif-2;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: $normal;
   line-height: 1.25;
 
@@ -135,19 +134,67 @@
   height: 100%;
 }
 
-// responsive
 
-.gallery-grid {
-  margin-right: -12px;
-  margin-left: -12px;
+@media (min-width: 540px) {
+  .recipes-grid__container {
+    display: flex;
+    flex-direction: row;
 
-  > div {
-    margin: 0 12px;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  .gallery-item {
-    margin-top: 24px;
+  .gallery-grid {
+    margin-right: -8px;
+    margin-left: -8px;
 
-    flex-basis: calc(25% - 24px);
+    > div {
+      margin: 0 8px;
+    }
+
+    .gallery-item {
+      margin-top: 24px;
+
+      flex-basis: calc(50% - 16px);
+    }
+  }
+}
+
+@media (min-width: 820px) {
+  .gallery-grid {
+    margin-right: -12px;
+    margin-left: -12px;
+
+    > div {
+      margin: 0 12px;
+    }
+
+    .gallery-item {
+      flex-basis: calc(33.33% - 24px);
+    }
+  }
+}
+
+@media (min-width: 1080px) {
+  .gallery-grid {
+    margin-right: -12px;
+    margin-left: -12px;
+
+    .gallery-item {
+      flex-basis: calc(25% - 24px);
+    }
+  }
+}
+
+
+
+
+@media
+  (max-width: 320px),
+  (min-width: 540px) and (max-width: 645px),
+  (min-width: 820px) and (max-width: 1045px),
+  (min-width: 1080px) {
+  .recipe-thumb__heading {
+    font-size: 21px;
   }
 }

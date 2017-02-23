@@ -23,11 +23,17 @@ body {
 // Headings
 
 .section-heading {
-  font-size: 31px;
+  font-size: 28px;
   font-weight: $light;
-  line-height: 36px;
+  line-height: 1.16;
 
   margin-bottom: 24px;
 
   color: $support-uno;
+}
+
+@media screen and (min-width: 540px) {
+  .section-heading {
+    font-size: 31px;
+  }
 }
