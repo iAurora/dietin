@@ -1,6 +1,8 @@
 // Variant 1
 
 .articles-intro {
+  line-height: 1.6em;
+
   max-width: 680px;
 }
 
@@ -35,6 +37,8 @@
 }
 
 .article-list__link {
+  line-height: 1.6em;
+
   padding: 24px;
 
   transition: all .3s ease;
