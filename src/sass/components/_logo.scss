@@ -1,12 +1,9 @@
 .logo {
-  padding-bottom: 6px;
-
   transition: opacity .3s ease;
 }
 
 .logo--header {
-  height: $v-main;
-  margin-right: 48px;
+  height: $v-smaller;
 }
 
 
@@ -19,4 +16,15 @@
 
 .logo:hover {
   opacity: .8;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-bottom: 6px;
+  }
+
+  .logo--header {
+    height: $v-main;
+    margin-right: 48px;
+  }
 }

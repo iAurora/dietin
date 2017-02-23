@@ -3,8 +3,9 @@
 .mobile-nav__btn {
   display: flex;
 
-  width: $v-main;
-  height: $v-main;
+  width: $v-smaller;
+  height: $v-smaller;
+  margin-right: -16px;
 
   cursor: pointer;
   transition: all .3s ease;
@@ -31,7 +32,7 @@
 
   position: absolute;
   z-index: 200500;
-  top: $v-main;
+  top: $v-smaller;
 
   width: 100%;
 
@@ -130,4 +131,24 @@
 .mobile-subnav-btn:hover {
   color: white;
   background-color: $primary;
+}
+
+.mobile-nav-overlay {
+  position: absolute;
+  z-index: 500;
+  top: $v-smaller;
+
+  display: none;
+
+  width: 100%;
+  height: calc(100% - 64px);
+
+  background-color: rgba(0,0,0,.8);
+}
+
+
+@media screen and (min-width: 768px) {
+  .mobile-nav__btn {
+    display: none;
+  }
 }

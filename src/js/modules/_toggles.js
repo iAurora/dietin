@@ -1,11 +1,13 @@
 (function ($) {
 
+  var $html = $('html');
   var $toggleMenuBtn = $('.js-dropdown-btn');
   var $toggledMenu = $('.js-dropdown');
   var $toggleSearchBtn = $('.js-search-btn');
   var $toggledSearch = $('.js-search');
   var $toggleMobileBtn = $('.js-mobile-nav-btn');
   var $toggledMobile = $('.js-mobile-nav');
+  var $mobileOverlay = $('.js-mobile-nav-overlay');
 
   function toggleMenu (e) {
     $toggleMenuBtn.toggleClass('is-open');
@@ -20,6 +22,7 @@
    function toggleMobile (e) {
     $toggleMobileBtn.toggleClass('is-open');
     $toggledMobile.toggleClass('is-open');
+    $mobileOverlay.toggle();
   }
 
   function hideMenu (e) {
@@ -47,9 +50,16 @@
     $toggleMenuBtn.on('click', toggleMenu);
     $toggleSearchBtn.on('click', toggleSearch);
     $toggleMobileBtn.on('click', toggleMobile);
-    $('html').on('click', hideMenu);
-    $('html').on('click', hideSearch);
-    $('html').on('click', hideMobile);
+    $html.on('click', hideMenu);
+    $html.on('click', hideSearch);
+    $html.on('click', hideMobile);
+
+    $mobileOverlay.click(function(){
+      $mobileOverlay.toggle();
+      $toggleMobileBtn.toggleClass('is-open');
+      $toggledMobile.toggleClass('is-open');
+    });
+
   });
 
 })(jQuery);

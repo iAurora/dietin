@@ -3,8 +3,8 @@
 .search__btn {
   display: flex;
 
-  width: $v-main;
-  height: $v-main;
+  width: $v-smaller;
+  height: $v-smaller;
 
   cursor: pointer;
   transition: all .3s ease;
@@ -101,5 +101,13 @@
   &:hover {
     color: white;
     background-color: $primary-link-faded;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .search__btn {
+    width: $v-main;
+    height: $v-main;
   }
 }

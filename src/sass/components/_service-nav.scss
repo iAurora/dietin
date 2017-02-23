@@ -1,13 +1,20 @@
-
 .service-nav {
-  font-size: 14px;
-
-  margin: 0 16px;
-
-  cursor: pointer;
-  transition: all .3s ease;
+  display: none;
 }
 
-.service-nav:hover {
-  text-decoration: underline;
+@media screen and (min-width: 768px) {
+  .service-nav {
+    font-size: 14px;
+
+    display: block;
+
+    margin: 0 16px;
+
+    cursor: pointer;
+    transition: all .3s ease;
+  }
+
+  .service-nav:hover {
+    text-decoration: underline;
+  }
 }
