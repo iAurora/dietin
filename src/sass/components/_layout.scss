@@ -2,9 +2,20 @@
   max-width: 1084px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 24px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .section-container {
   padding-top: 50px;
+}
+
+@media screen and (min-width: 820px) {
+  .width-container {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+  .section-container {
+    padding-top: 50px;
+  }
 }

@@ -43,7 +43,7 @@
   display: flex;
 
   max-width: 600px;
-  padding: 8px 0;
+  padding: 8px 16px;
 }
 
 .search__field {
@@ -78,6 +78,7 @@
   padding: 0 20px;
 
   border: 4px solid $sep-light;
+  border-radius: 0;
 }
 
 .search__submit:focus {
@@ -95,6 +96,7 @@
 
   color: $primary-bright;
   border: 0;
+  border-radius: 0;
   background-color: $primary-link;
   &:hover {
     color: white;
