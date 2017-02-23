@@ -82,11 +82,19 @@
 }
 
 .recipe-thumb__heading {
+  font-family: $sans-serif-2;
+  font-size: 20px;
+  font-weight: $normal;
+  line-height: 1.25;
+
   position: absolute;
   z-index: 1;
   right: 16px;
   bottom: 4px;
   left: 16px;
+
+  color: white;
+  text-shadow: 0 0 10px #323b3c;
 }
 
 .recipe-nutrients {
