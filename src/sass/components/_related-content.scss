@@ -75,6 +75,8 @@
   width: 88px;
   height: 66px;
   margin-right: 16px;
+
+  flex-shrink: 0;
 }
 
 .related-list__title {
