@@ -1,0 +1,16 @@
+<div class="related-recipes">
+
+  <h3 class="related-header">Похожие рецепты</h3>
+
+  <ul class="related-list">
+    {% for recipe in recipes | batch(6) | first %}
+    <li class="related-list__item related-recipes__item">
+      <a href="#" class="related-list__link">
+        <img class="related-list__thumb" src="img/thmbs/recipe-thumb-{{ loop.index }}.jpg" />
+        <h5 class="related-list__title">{{ recipe.title }}</h5>
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+
+</div>

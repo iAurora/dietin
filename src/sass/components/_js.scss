@@ -73,3 +73,11 @@
     display: block;
   }
 }
+
+.js-hidden-nutrients {
+  display: none;
+}
+
+.js-hidden-nutrients.is-open {
+  display: flex;
+}

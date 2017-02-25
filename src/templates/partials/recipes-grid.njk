@@ -12,15 +12,15 @@
       <h2 class="recipe-thumb-heading recipe-thumb__heading">{{ recipe.title }}</h2>
     </div>
 
-    <ul class="recipe-nutrients">
+    <ul class="recipe-card-nutrients">
 
       {# nutrient in data/data.json #}
       {% for nutrient in nutrients %}
-      <li class="recipe-nutrients__item">
-        <span class="recipe-nutrients__key">{{ nutrient.name }}
-          <em class="recipe-nutrients__unit">({{ nutrient.unit }})</em>
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">{{ nutrient.name }}
+          <em class="recipe-card-nutrients__unit">({{ nutrient.unit }})</em>
         </span>
-        <span class="recipe-nutrients__value">{{ nutrient.amount }}</span>
+        <span class="recipe-card-nutrients__value">{{ nutrient.amount }}</span>
       </li>
       {% endfor %}
 

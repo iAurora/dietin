@@ -1,0 +1,34 @@
+{% set pageName = "recipe" %}
+{% set pathology = "Онкологические заболевания" %}
+{% set title = 'Tарелка со множеством вкусных вещей длинное название - Diet In' %}
+{% set description = 'Описание страницы' %}
+{% extends 'base.njk' %}
+
+{% block content -%}
+
+  <div class="width-container">
+
+    <ul class="breadcrumbs breadcrumbs--single">
+      <li class="breadcrumbs__item"><a class="link--support link--support-on-white" href="#">Главная</a></li>
+      <li class="breadcrumbs__item"><a class="link--support link--support-on-white" href="#">Онкологические заболевания</a></li>
+      <li class="breadcrumbs__item"><a class="link--support link--support-on-white" href="#">Рецепты</a></li>
+      <li class="breadcrumbs__item"><a class="link--support link--support-on-white" href="#">Супы</a></li>
+    </ul>
+
+  </div>
+
+  <div class="single-container">
+
+    {% include "partials/recipe-body.njk" %}
+
+    <div class="related-content">
+
+      {% include "partials/related-recipes.njk" %}
+
+      {% include "partials/ad-banner.njk" %}
+
+    </div>
+
+  </div>
+
+{%- endblock %}

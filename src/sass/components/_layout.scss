@@ -1,5 +1,5 @@
 .width-container {
-  max-width: 1084px;
+  max-width: $h-max;
   margin-right: auto;
   margin-left: auto;
   padding-right: 16px;
@@ -10,15 +10,26 @@
   padding-top: 30px;
 }
 
-@media screen and (min-width: 540px) {
-  .section-container {
-    padding-top: 50px;
-  }
-}
-
 @media screen and (min-width: 820px) {
   .width-container {
     padding-right: 24px;
     padding-left: 24px;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .single-container {
+    display: flex;
+
+    max-width: $h-max;
+    margin: auto;
+
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .section-container {
+    padding-top: 50px;
   }
 }

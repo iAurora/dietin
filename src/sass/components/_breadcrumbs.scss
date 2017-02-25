@@ -6,9 +6,9 @@
   padding: 0;
 
   list-style: none;
+
+  color: $text-pale;
 }
-
-
 
 .breadcrumbs__item {
   display: inline;
@@ -28,6 +28,14 @@
 
 .breadcrumbs--banner {
   z-index: 100;
+}
 
-  color: $text-pale;
+.breadcrumbs--single {
+  display: none;
+}
+
+@media screen and (min-width: 680px) {
+  .breadcrumbs--single {
+    display: block;
+  }
 }

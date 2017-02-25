@@ -1,0 +1,20 @@
+<div class="action-footer">
+
+  <span class="download-pdf">
+    <svg class="icon icon-pdf">
+      <use xlink:href="svg/sprite.svg#icon-pdf"></use>
+    </svg>
+    <a href="#" class="download-pdf__link link">Скачать PDF</a>
+  </span>
+
+  <ul class="action-list">
+    {% for action in actions %}
+    <li class="action-list__item">
+      <svg class="icon icon-{{ action }}">
+        <use xlink:href="svg/sprite.svg#icon-{{ action }}"></use>
+      </svg>
+    </li>
+    {% endfor %}
+  </ul>
+
+</div>

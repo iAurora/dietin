@@ -96,7 +96,7 @@
   text-shadow: 0 0 10px #323b3c;
 }
 
-.recipe-nutrients {
+.recipe-card-nutrients {
   font-size: 13px;
 
   margin: 0;
@@ -105,16 +105,16 @@
   list-style: none;
 }
 
-.recipe-nutrients__unit {
+.recipe-card-nutrients__unit {
   font-size: 11px;
   font-style: normal;
 }
 
-.recipe-nutrients__value {
+.recipe-card-nutrients__value {
   font-weight: $bold;
 }
 
-.recipe-nutrients__item {
+.recipe-card-nutrients__item {
   display: flex;
 
   padding-top: 8px;
@@ -195,6 +195,6 @@
   (min-width: 820px) and (max-width: 1045px),
   (min-width: 1080px) {
   .recipe-thumb__heading {
-    font-size: 21px;
+    font-size: 20px;
   }
 }
