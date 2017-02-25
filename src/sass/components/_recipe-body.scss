@@ -6,9 +6,10 @@
 @media screen and (min-width: 680px) {
   .recipe-content {
     padding-right: 0;
+    padding-left: 0;
   }
   .recipe {
-    padding-left: 16px;
+    padding-left: 24px;
 
     border-right: 1px solid $sep-light;
 
@@ -79,11 +80,21 @@
   list-style: none;
 }
 
+@media screen and (min-width: 680px) {
+  .recipe-ingredients__items {
+    margin-right: 24px;
+  }
+}
+
 .recipe-ingredinet__item {
-  font-size: 14px;
+  font-size: 15px;
+  font-style: italic;
   line-height: 20px;
 
-  margin-bottom: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  border-bottom: 1px solid $sep-light;
 }
 
 .recipe-keywords {
@@ -130,7 +141,7 @@
   margin-right: -16px;
   margin-bottom: 48px;
   margin-left: -16px;
-  padding: 16px 16px 32px;
+  padding: 16px 24px 32px;
 
   border-top: 4px solid $primary;
   border-bottom: 3px solid $sep-light;
@@ -181,7 +192,7 @@
 }
 
 .recipe-nutrients__item {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 20px;
 
   display: flex;

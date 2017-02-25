@@ -13,10 +13,10 @@
 
         <h2 class="recipe-section__header">Ингредиенты</h2>
 
-        <ul class="recipe-ingredients__list">
+        {#<ul class="recipe-ingredients__list">
           {% for group in ingredientGroups %}
           <li class="recipe-ingredients__group">
-            <h5 class="recipe-ingredients__group-recipe__header">{{ group }}</h5>
+            <h5 class="recipe-ingredients__group-recipe__header">{{ group }}</h5>#}
             <ul class="recipe-ingredients__items">
               {% for item in ingredientItems %}
               <li class="recipe-ingredinet__item">
@@ -24,9 +24,9 @@
               </li>
               {% endfor %}
             </ul>
-          </li>
+          {#</li>
           {% endfor %}
-        </ul>
+        </ul>#}
 
 
       </div> {# / recipe-ingredients #}
