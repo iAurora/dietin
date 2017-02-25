@@ -1,0 +1,35 @@
+{% set pageName = "article" %}
+{% set pathology = "Онкологические заболевания" %}
+{% set title = 'Нутритивный статус и тканевый состав тела у детей после трансплантации гемопоэтических стволовых клеток - Diet In' %}
+{% set description = 'Описание страницы' %}
+{% extends 'base.njk' %}
+
+{% block content -%}
+
+  <div class="width-container">
+
+    <ul class="breadcrumbs breadcrumbs--single">
+      <li class="breadcrumbs__item"><a class="link--support link--support-on-white" href="#">Главная</a></li>
+      <li class="breadcrumbs__item"><a class="link--support link--support-on-white" href="#">Онкологические заболевания</a></li>
+      <li class="breadcrumbs__item">Статьи</li>
+    </ul>
+
+  </div>
+
+  <div class="single-container article-container">
+
+    {% include "partials/article-body.njk" %}
+
+    <div class="related-content">
+
+      {% include "partials/related-articles.njk" %}
+
+      {% include "partials/related-recipes.njk" %}
+
+      {% include "partials/ad-banner.njk" %}
+
+    </div>
+
+  </div>
+
+{%- endblock %}

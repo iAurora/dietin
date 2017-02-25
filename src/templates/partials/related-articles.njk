@@ -1,0 +1,15 @@
+<div class="related-articles">
+
+  <h3 class="related-header">Свежие статьи</h3>
+
+  <ul class="related-list">
+    {% for article in articles | batch(5) | first %}
+    <li class="related-list__item">
+      <a href="#" class="related-list__link">
+      <h5 class="related-list__title">{{ article }}</h5>
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+
+</div>
