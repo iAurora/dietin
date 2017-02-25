@@ -106,12 +106,24 @@
   padding: 0;
 
   list-style: none;
+
+  flex-wrap: wrap;
 }
 
 .recipe-keywords__item {
+  font-size: 14px;
   font-style: italic;
+  line-height: 20px;
 
-  margin-right: 8px;
+  margin-right: 4px;
+}
+
+.recipe-keywords__item::after {
+  content: ',';
+}
+
+.recipe-keywords__item:last-child::after {
+  content: '';
 }
 
 
