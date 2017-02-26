@@ -6,7 +6,7 @@
       <a class="mobile-nav__link" href="/">Главная</a>
     </li>
 
-    {# nutrient in data/data.json #}
+
     {% for pathology in pathologies %}
     <li class="mobile-nav__item">
       <a class="mobile-nav__link" href="#0"> {{ pathology }}</a>
@@ -19,7 +19,7 @@
         </svg>
       </span>
       <ul class="mobile-subnav js-mobile-subnav">
-        {# nutrient in data/data.json #}
+
         {% for subsection in subsections %}
         <li class="mobile-subnav__item">
           <a class="mobile-nav__sublink" href="#0">{{ subsection }}</a>
@@ -32,6 +32,14 @@
 
     <li class="mobile-nav__item">
       <a class="mobile-nav__link" href="/contact.html">Обратная связь</a>
+    </li>
+
+    <li class="mobile-nav__item">
+      <a class="mobile-nav__link" href="/login.html">Вход</a>
+    </li>
+
+    <li class="mobile-nav__item">
+      <a class="mobile-nav__link" href="/registration.html">Регистрация</a>
     </li>
 
   </ul>

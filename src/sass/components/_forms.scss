@@ -1,0 +1,189 @@
+.form-input {
+  display: block;
+  // width: 300px;
+
+  width: 100%;
+  height: 36px;
+  margin-bottom: 16px;
+  padding: 0 8px;
+
+  transition: all .3s ease;
+
+  border: 1px solid $sep-dark;
+  border-radius: 2px;
+
+  appearance: none;
+}
+
+.form-input::placeholder {
+  font-size: 14px;
+  font-style: italic;
+
+  transition: color .3s ease;
+
+  color: $text-pale;
+}
+
+.form-input:focus::placeholder {
+  color: white;
+}
+
+
+.form-input:focus,
+.search__submit:focus {
+  outline: none;
+}
+
+.form-input:focus {
+  padding: 0 16px;
+
+  border: 1px solid $primary;
+  border-radius: 0;
+}
+
+textarea.form-input {
+  height: 160px;
+  padding: 16px;
+}
+
+textarea.form-input:focus {
+  padding: 16px;
+}
+
+
+.form-submit {
+  height: 36px;
+  margin-top: 16px;
+  padding: 0 24px;
+
+  cursor: pointer;
+
+  color: white;
+  border: 0;
+  border-bottom: 3px solid $sep-light;
+  border-radius: 0;
+  background-color: $primary;
+  &:hover {
+    color: white;
+    background-color: $primary-link-faded;
+  }
+}
+
+
+
+.form-submit:focus {
+  padding: 0 20px;
+
+  border: 4px solid $primary-link-faded;
+}
+
+
+
+
+.form-label {
+  font-size: 14px;
+
+  display: block;
+
+  margin-bottom: 4px;
+}
+
+
+
+
+input[type=checkbox].css-checkbox {
+  position: absolute; z-index: -1000; left: -1000px; overflow: hidden; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; padding: 0; border: 0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+  font-size: 13px;
+  line-height: 15px;
+
+  display: inline-block;
+
+  height: 15px;
+  padding-left: 20px;
+
+  cursor: pointer;
+  vertical-align: middle;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+  background-position: 0 -15px;
+}
+label.css-label {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+  background-image: url(../img/checkbox.png);
+
+   -khtml-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+
+
+
+.reg-news,
+.change-type {
+  font-size: 13px;
+  line-height: 1.4;
+
+  padding-top: 8px;
+}
+
+
+
+.form-container {
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+  padding: 16px;
+
+  background-color: white;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+  padding: 16px;
+
+  background-color: white;
+}
+
+@media screen and (min-width: 680px) {
+  .form-container {
+    max-width: 500px;
+  }
+
+  .form-container {
+    margin: 32px auto 98px ;
+    padding: 16px 32px 48px;
+
+    box-shadow: $shadow-big;
+  }
+
+  .login-page {
+    background-image: url('../img/big-bg-login.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .registration-page {
+    background-image: url('../img/big-bg-registration.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .contact-page {
+    background-image: url('../img/big-bg-contact.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

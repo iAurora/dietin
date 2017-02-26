@@ -1,0 +1,41 @@
+.editor-content {
+  p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  a {
+    transition: all .3s ease;
+
+    color: $primary-link;
+  }
+
+  a:hover {
+    color: $primary;
+  }
+
+  h2 {
+    font-family: $sans-serif-2;
+    font-size: 24px;
+    font-weight: $normal;
+    line-height: 1.3333;
+
+    color: $text-black;
+  }
+
+  h3 {
+    font-family: $sans-serif-2;
+    font-size: 20px;
+    font-weight: $normal;
+    line-height: 1.3333;
+
+    color: $text-black;
+  }
+
+  h4 {
+    font-size: 15px;
+    font-weight: $bold;
+
+    color: $text-black;
+  }
+}

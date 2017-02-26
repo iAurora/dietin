@@ -1,0 +1,47 @@
+{% set pageName = "registration" %}
+{% set pathology = "" %}
+{% set title = 'Регистрация - Diet In' %}
+{% set description = 'Описание страницы' %}
+{% extends 'base.njk' %}
+
+{% block content -%}
+
+
+  <div class="width-container hor-padding-container ver-padding-xx-container">
+
+  <div class="form-container">
+
+    <form class="form" action="get" autocomplete="on">
+      <h1 class="section-heading">Регистрация</h1>
+
+      <label class="form-label" for="reg-username">Ваше имя</label>
+      <input class="form-input" id="reg-username" name="reg-username" required="required" type="text" placeholder="Как к вам обращаться?" />
+
+      <label class="form-label" for="reg-email">Ваш email</label>
+      <input class="form-input" id="reg-email" name="reg-email" required="required" type="email" placeholder="pochta@email.ru"/>
+
+      <label class="form-label" for="reg-password">Пароль</label>
+      <input class="form-input" id="reg-password" name="reg-password" required="required"/>
+
+      <label class="form-label" for="reg-password-2">Повторите пароль</label>
+      <input class="form-input" id="reg-password-2" name="reg-password-2" required="required"/>
+
+      <p class="reg-news">
+        <input class="css-checkbox" type="checkbox" name="reg-news" id="reg-news" value="reg-news" />
+        <label class="css-label" for="reg-news">Подписаться на рассылку новостей</label>
+			</p>
+
+      <input class="form-submit" type="submit" value="Регистрироваться"/>
+
+      <p class="change-type">
+        Уже есть учётная запись?
+        <a href="/login.html" class="link">Войти</a>
+      </p>
+    </form>
+
+  </div>
+
+
+  </div>
+
+{%- endblock %}

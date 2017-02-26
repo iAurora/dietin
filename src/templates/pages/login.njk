@@ -1,0 +1,38 @@
+{% set pageName = "login" %}
+{% set pathology = "" %}
+{% set title = 'Вход - Diet In' %}
+{% set description = 'Описание страницы' %}
+{% extends 'base.njk' %}
+
+{% block content -%}
+
+  <div class="width-container hor-padding-container ver-padding-xx-container">
+
+    <div class="form-container">
+
+      <form class="form" action="get" autocomplete="on">
+        <h1 class="section-heading">Вход</h1>
+
+        <label class="form-label" for="log-email">Ваш email</label>
+        <input class="form-input" id="log-email" name="log-email" required="required" type="email" placeholder="pochta@email.ru"/>
+
+        <label class="form-label" for="log-password">Пароль</label>
+        <input class="form-input" id="log-password" name="log-password" required="required"/>
+
+        <p class="log-persist">
+          <input class="css-checkbox" type="checkbox" name="log-persist" id="log-persist" value="log-persist" />
+          <label class="css-label" for="log-persist">Запомнить меня</label>
+        </p>
+
+        <input class="form-submit" type="submit" value="Войти"/>
+
+        <p class="change-type">
+          Ещё не учётной записи?
+          <a href="/registration.html" class="link">Зарегистрироваться</a>
+        </p>
+      </form>
+
+    </div>
+
+  </div>
+{%- endblock %}

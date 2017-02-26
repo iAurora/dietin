@@ -14,7 +14,7 @@
 
 </head>
 
-<body>
+<body {% if pageName == 'login' %}class="login-page"{% endif %}{% if pageName == 'registration' %}class="registration-page"{% endif %}{% if pageName == 'contact' %}class="contact-page"{% endif %}>
 
   <!--[if lt IE 9]>
     <p class="browserupgrade">Похоже, ваш браузер устарел. Для работы этого сайта требуется поддержка современных интернет-технологий. <a href="https://www.browser-update.org/ru/update.html">Обновите</a> браузер для комфортного и безопасного пользования Интернетом.</p>
