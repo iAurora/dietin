@@ -1,38 +1,14 @@
-@media screen and (min-width: 620px) {
-  .article-container {
-    padding-top: 24px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .article-container {
-    padding-top: 32px;
-  }
-}
-
-.article {
-  padding-top: 32px;
-  padding-right: 16px;
-  padding-left: 16px;
-}
-
-
 @media screen and (min-width: 680px) {
   .article {
-    padding-top: 0;
-  }
-}
-
-@media screen and (min-width: 820px) {
-  .article {
     padding-right: 24px;
-    padding-left: 24px;
+
+    flex: 1 1 auto;
   }
 }
 
 @media screen and (min-width: $h-max) {
   .article {
-    padding-right: 48px;
+    padding-right: 32px;
   }
 }
 

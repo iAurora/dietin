@@ -1,24 +1,5 @@
-.width-container {
-  max-width: $h-max;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 16px;
-  padding-left: 16px;
-}
-
-.section-container {
-  padding-top: 30px;
-}
-
-@media screen and (min-width: 820px) {
-  .width-container {
-    padding-right: 24px;
-    padding-left: 24px;
-  }
-}
-
 @media screen and (min-width: 680px) {
-  .single-container {
+  .flex-container {
     display: flex;
 
     max-width: $h-max;
@@ -28,8 +9,54 @@
   }
 }
 
+
+
+.width-container {
+  max-width: $h-max;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+.hor-padding-container {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+@media screen and (min-width: 820px) {
+  .hor-padding-container {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+
+
+.ver-padding-x-container {
+  padding-top: 32px;
+}
+
+@media screen and (min-width: 680px) {
+  .ver-padding-x-container {
+    padding-top: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ver-padding-x-container {
+    padding-top: 32px;
+  }
+}
+
+
+
+.ver-padding-xx-container {
+  padding-top: 30px;
+}
+
 @media screen and (min-width: 540px) {
-  .section-container {
+  .ver-padding-xx-container {
     padding-top: 50px;
   }
 }

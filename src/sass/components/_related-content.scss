@@ -1,8 +1,6 @@
 .related-content {
   margin-top: $v-main;
   margin-bottom: -$v-main;
-  padding-right: 16px;
-  padding-left: 16px;
 }
 
 @media screen and (min-width: 680px) {
@@ -10,14 +8,9 @@
     max-width: 340px;
     margin-top: 0;
     margin-bottom: 0;
+    padding-left: 16px;
 
     flex: 1 1 100%;
-  }
-}
-
-@media screen and (min-width: 820px) {
-  .related-content {
-    padding-right: 24px;
   }
 }
 

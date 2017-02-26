@@ -1,25 +1,23 @@
-.recipe-content {
-  padding-right: 16px;
-  padding-left: 16px;
-}
 
 @media screen and (min-width: 680px) {
-  .recipe-content {
-    padding-right: 0;
-    padding-left: 0;
-  }
   .recipe {
-    padding-left: 24px;
-
     border-right: 1px solid $sep-light;
 
     flex: 1 1 auto;
   }
 }
 
-@media screen and (min-width: 820px) {
-  .recipe {
-    border-right: 1px solid $sep-light;
+.recipe-image__wrapper {
+  line-height: 0;
+
+  margin: 0 -16px;
+
+  text-align: center;
+}
+
+@media screen and (min-width: 680px) {
+  .recipe-image__wrapper {
+    margin: 0;
   }
 }
 
