@@ -5,7 +5,7 @@
 
 @media screen and (min-width: 680px) {
   .related-content {
-    max-width: 340px;
+    max-width: 240px;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 16px;
@@ -13,6 +13,24 @@
     flex: 1 1 100%;
   }
 }
+
+@media screen and (min-width: 820px) {
+  .related-content {
+    max-width: 300px;
+
+    flex: 1 1 100%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .related-content {
+    max-width: 340px;
+
+    flex: 1 1 100%;
+  }
+}
+
+
 
 .related-header {
   font-size: 14px;

@@ -7,7 +7,7 @@
 
 @media screen and (min-width: 680px) {
   .pathology-subnav {
-    max-width: 300px;
+    max-width: 240px;
     margin-top: 0;
     margin-right: 48px;
     margin-bottom: 0;
@@ -20,9 +20,26 @@
   }
 }
 
-.pathology-subnav {
-  // padding: 24px;
+@media screen and (min-width: 820px) {
+  .pathology-subnav {
+    max-width: 280px;
+
+    flex: 1 1 100%;
+  }
 }
+
+@media screen and (min-width: 960px) {
+  .pathology-subnav {
+    max-width: 300px;
+
+    flex: 1 1 100%;
+  }
+}
+
+
+
+
+
 
 .pathology-subnav__list {
   margin: 0;
