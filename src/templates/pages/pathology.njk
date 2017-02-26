@@ -1,0 +1,49 @@
+{% set pageName = "pathology" %}
+{% set pathology = "Онкологические заболевания" %}
+{% set title = 'Онкологические заболевания - Diet In' %}
+{% set description = 'Описание страницы' %}
+{% extends 'base.njk' %}
+
+{% block content -%}
+
+  <div class="width-container hor-padding-container">
+
+    <ul class="breadcrumbs breadcrumbs--single">
+      <li class="breadcrumbs__item"><a class="link--support link--support-on-white" href="#">Главная</a></li>
+      <li class="breadcrumbs__item"><a class="link--support link--support-on-white" href="#">Онкологические заболевания</a></li>
+    </ul>
+
+  </div>
+
+  <div class="flex-container width-container hor-padding-container ver-padding-xx-container">
+
+
+    <div class="pathology">
+
+      <h1 class="section-heading pathology__heading">Онкологические заболевания</h1>
+
+      <ul class="pathology-mobile-nav">
+        <li class="pathology-mobile-nav__item">
+          <a href="/articles.html" class="pathology-mobile-nav__link">Статьи</a>
+        </li>
+        <li class="pathology-mobile-nav__item">
+          <a href="/recipes.html" class="pathology-mobile-nav__link">Рецепты</a>
+        </li>
+      </ul>
+
+      <div class="pathology__content">
+        {% include "partials/pathology-content.njk" %}
+      </div>
+
+    </div>
+
+
+    <div class="pathology-subnav">
+
+      {% include "partials/pathology-subnav.njk" %}
+
+    </div>
+
+  </div>
+
+{%- endblock %}

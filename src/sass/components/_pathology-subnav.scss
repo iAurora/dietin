@@ -1,0 +1,79 @@
+.pathology-subnav {
+  margin-top: $v-main;
+  padding: 32px 16px;
+
+  border-top: 1px solid $sep-light;
+}
+
+@media screen and (min-width: 680px) {
+  .pathology-subnav {
+    max-width: 300px;
+    margin-top: 0;
+    margin-right: 48px;
+    margin-bottom: 0;
+    padding: 0;
+
+    border-top: none;
+
+    flex: 1 1 100%;
+    order: -1;
+  }
+}
+
+.pathology-subnav {
+  // padding: 24px;
+}
+
+.pathology-subnav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.pathology-subnav__base {
+  border-bottom: 1px solid $sep-light;
+}
+
+.pathology-subnav__link {
+  font-size: 13px;
+  font-weight: $bold;
+
+  display: block;
+
+  padding: 8px 0;
+
+  text-decoration: none;
+  letter-spacing: .2px;
+  text-transform: uppercase;
+
+  color: $text-black;
+}
+
+.pathology-subnav__link:hover {
+  color: black;
+}
+
+.pathology-sublist {
+  margin: 8px 0 24px;
+  padding-left: 24px;
+
+  list-style: none;
+
+  // border-left: 2px solid $sep-light;
+}
+
+.pathology-sublist__item {
+  font-size: 14px;
+  line-height: 1.5;
+
+  margin-bottom: 16px;
+}
+
+.pathology-sublist__link {
+  text-decoration: none;
+}
+
+.pathology-sublist__link:hover {
+  text-decoration: underline;
+}

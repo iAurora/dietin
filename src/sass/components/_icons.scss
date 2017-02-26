@@ -33,3 +33,14 @@
     color: #8ec8f0;
   }
 }
+
+.pathology-subnav-icon {
+  display: inline-block;
+
+  vertical-align: middle;
+}
+
+.pathology-subnav__link:hover .pathology-subnav-icon,
+.pathology-subnav__link.is-active .pathology-subnav-icon {
+  color: $primary;
+}
