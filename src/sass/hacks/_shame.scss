@@ -2,16 +2,449 @@
   width: 100%; height: 1000px;
 }
 
-// .pathologies-nav,
-// .service-nav,
-// .section-banner {
-//   display: none;
-// }
-
 html {
   background-color: black;
 }
 
 body {
   background-color: white;
+}
+
+
+
+///////////////////
+
+.hero {
+  display: flex;
+
+  width: 100%;
+  height: 440px;
+
+  background-color: #faf9f7;
+  background-image: url('../img/hero-img-420x480.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  align-items: flex-end;
+}
+
+.hero__text {
+  margin: auto -16px;
+
+  background-image: linear-gradient(-180deg, rgba(255,255,255,.00) 0%, #ffffff 100%);
+}
+
+.hero__title {
+  font-size: 32px;
+  font-weight: $bold;
+  line-height: 28px;
+
+  margin-bottom: 0;
+  padding: 16px 16px 8px;
+
+  text-transform: uppercase;
+
+  color: $primary;
+  background-color: rgba(255,255,255,.9);
+}
+
+.hero__subtitle {
+  font-size: 24px;
+  font-weight: $normal;
+
+  display: block;
+
+  margin-bottom: 0;
+
+  text-transform: none;
+
+  color: $support-uno;
+}
+
+.hero__slogan {
+  font-size: 16px;
+  line-height: 24px;
+
+  margin: 0;
+  padding: 16px 24px;
+
+  color: $text-normal;
+  background-color: rgba(255,255,255,.4);
+}
+
+@media screen and (min-width: 420px) {
+  .hero {
+    background-image: url('../img/hero-img-680x480.jpg');
+    background-position: right bottom;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    display: block;
+  }
+  .hero__title {
+    background-color: transparent;
+  }
+  .hero__slogan {
+    background-color: transparent;
+  }
+  .hero__text {
+    max-width: 250px;
+    margin-right: auto;
+    padding-top: 72px;
+    padding-left: 16px;
+
+    background-image: none;
+  }
+}
+
+@media screen and (min-width: 530px) {
+  .hero__text {
+    max-width: 300px;
+  }
+  .hero__title {
+    padding: 32px 24px 0;
+  }
+}
+
+@media screen and (min-width: 580px) {
+  .hero__text {
+    max-width: 350px;
+    padding-top: 80px;
+    padding-left: 48px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero {
+    background-image: url('../img/hero-img-820x480.jpg');
+    background-position: 90% bottom;
+  }
+  .hero__text {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero__text {
+    max-width: 460px;
+    padding-left: 64px;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .hero__text {
+    max-width: 460px;
+    padding-left: 96px;
+  }
+  .hero__title {
+    font-size: 37px;
+    font-weight: $bold;
+    line-height: 32px;
+  }
+  .hero__subtitle {
+    font-size: 28px;
+  }
+  .hero {
+    border-bottom: 1px solid $bg-cold;
+    background-image: url('../img/hero-img.jpg');
+    background-position: 50% bottom;
+  }
+}
+
+
+
+
+.subline {
+  width: 100%;
+  min-height: 4px;
+
+  opacity: .7;
+  background-image: linear-gradient(-225deg, #6cdae9 0%, #5890d2 100%);
+}
+
+
+////////////////////
+
+.homebody {
+  line-height: 24px;
+
+  color: $text-normal;
+}
+
+.homebody-sm {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.meaningful {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 28px;
+
+  margin-top: 0;
+
+  color: $text-black;
+}
+
+
+
+
+
+
+.home-pathologies {
+  margin-top: 40px;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+
+.home-pathology__img {
+  display: block;
+
+  max-width: 100%;
+  height: auto;
+}
+
+.home_pathology__voice {
+  font-size: 17px;
+  font-style: italic;
+  line-height: 1.7;
+
+  display: block;
+
+  padding: 32px 0 16px 32px;
+
+  color: $support-uno;
+}
+
+
+.home-pathology__list {
+  margin-top: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.home-pathology__item {
+  border-bottom: 1px solid $sep-light;
+}
+
+.home-pathology__item:last-child {
+  border-bottom: none;
+}
+
+
+.home-pathology__link {
+  line-height: 1.6;
+
+  display: block;
+
+  padding: 12px 36px;
+
+  text-decoration: none;
+}
+
+
+@media screen and (min-width: 680px) {
+  .home-pathologies {
+    max-width: 200px;
+    margin-top: 0;
+    margin-right: 24px;
+    margin-bottom: 0;
+    padding-left: 16px;
+
+    flex: 1 1 100%;
+  }
+  .home-content__wrapper {
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .home-pathologies {
+    max-width: 260px;
+
+    flex: 0 0 260px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .home-pathologies {
+    max-width: 300px;
+    margin-right: 32px;
+
+    flex: 0 0 300px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.imt-calc {
+  margin-top: 48px;
+  margin-bottom: 0;
+  padding: 32px 0 0 0;
+
+  border-top: 1px solid $sep-light;
+
+  flex: 0 0 180px;
+}
+
+@media screen and (min-width: 500px) {
+  .imt-calc {
+    max-width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .imt-calc {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+
+    border-top: none;
+
+    flex: 0 0 160px;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .imt-calc {
+    flex: 0 0 220px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .imt-calc {
+    margin-left: 24px;
+
+    flex: 0 0 270px;
+  }
+}
+
+.calc-header {
+  font-family: $sans-serif-2;
+  font-size: 24px;
+  font-weight: $normal;
+
+  margin-top: 0;
+  padding-top: 0;
+
+  color: $text-black;
+}
+.under-calc {
+  font-size: 12px;
+  line-height: 1.3333;
+}
+
+
+
+.calc-warning {
+  font-size: 11px;
+  line-height: 1.333;
+
+  padding: 0 32px;
+}
+
+
+.calc-warning-header {
+  font-size: 12px;
+  line-height: 1.333;
+
+  padding: 0;
+
+  color: $text-black;
+}
+
+.imt-form {
+  padding: 24px;
+}
+
+.calc-result {
+  font-size: 13px;
+  line-height: 1.333;
+
+  margin: 16px 32px 32px;
+  padding: 24px;
+
+  text-align: center;
+
+  border: 2px solid $sep-light;
+  border-radius: 4px;
+  background-color: $bg-cold-faded;
+}
+
+.big-digits {
+  font-family: $sans-serif-2;
+  font-size: 42px;line-height: 30px;
+
+  margin: 24px;
+
+  color: $support-uno;
+}
+
+.calc-diapason {
+  margin: 0;
+  padding: 0;
+}
+
+.form-submit.js-calc-btn,
+.form-submit.js-calc-btn:focus {
+  outline: 0;
+}
+
+
+
+//////////// jquery stuff
+
+.home-faq h3 {
+  font-family: $sans-serif-2;
+  font-size: 19px;
+  font-weight: $normal;
+  line-height: 1.3333;
+
+  cursor: pointer;
+
+  color: $text-black;
+}
+
+.home-faq h3:hover {
+  color: $primary;
+}
+
+
+.ui-accordion .ui-accordion-content {
+  padding-bottom: 0;
+}
+
+div#ui-id-2.ui-accordion-content.ui-corner-bottom.ui-helper-reset.ui-widget-content.ui-accordion-content-active {
+  height: auto;
+}
+
+#accordion .ui-state-focus {
+  outline: none;
+}
+
+
+
+
+////////////////
+
+
+
+.home-intro {
+  max-width: 700px;
+  padding-bottom: 48px;
+
+  border-bottom: 1px solid $sep-light;
 }

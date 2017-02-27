@@ -61,3 +61,14 @@
     padding-top: 50px;
   }
 }
+
+
+.ver-padding-xxx-container {
+  padding-top: 48px;
+}
+
+@media screen and (min-width: 540px) {
+  .ver-padding-xxx-container {
+    padding-top: 72px;
+  }
+}
