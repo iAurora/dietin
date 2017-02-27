@@ -126,7 +126,7 @@ body {
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 720px) {
   .hero__text {
     max-width: 460px;
     padding-left: 64px;
@@ -135,13 +135,14 @@ body {
 
 @media screen and (min-width: 820px) {
   .hero__text {
-    max-width: 460px;
-    padding-left: 96px;
+    max-width: 580px;
+    padding-top: 64px;
+    padding-left: 120px;
   }
   .hero__title {
     font-size: 37px;
     font-weight: $bold;
-    line-height: 32px;
+    line-height: 40px;
   }
   .hero__subtitle {
     font-size: 28px;
@@ -208,7 +209,7 @@ body {
 }
 
 .home_pathology__voice {
-  font-size: 17px;
+  font-size: 20px;
   font-style: italic;
   line-height: 1.7;
 
