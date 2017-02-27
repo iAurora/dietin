@@ -265,7 +265,7 @@ body {
 
 @media screen and (min-width: 820px) {
   .home-pathologies {
-    max-width: 260px;
+    max-width: 240px;
 
     flex: 0 0 260px;
   }
@@ -273,7 +273,7 @@ body {
 
 @media screen and (min-width: 960px) {
   .home-pathologies {
-    max-width: 300px;
+    max-width: 270px;
     margin-right: 32px;
 
     flex: 0 0 300px;
@@ -321,7 +321,7 @@ body {
 
 @media screen and (min-width: 820px) {
   .imt-calc {
-    flex: 0 0 220px;
+    flex: 0 0 200px;
   }
 }
 
@@ -329,7 +329,7 @@ body {
   .imt-calc {
     margin-left: 24px;
 
-    flex: 0 0 270px;
+    flex: 0 0 260px;
   }
 }
 
@@ -398,6 +398,19 @@ body {
   margin: 0;
   padding: 0;
 }
+
+@media screen and (min-width: 680px) {
+  .big-digits {
+    font-size: 26px;
+    line-height: 21px;
+
+    margin: 12px;
+  }
+}
+
+
+
+
 
 .form-submit.js-calc-btn,
 .form-submit.js-calc-btn:focus {
