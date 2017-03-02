@@ -1,3 +1,21 @@
+// 680+
+@media screen and (min-width: 680px) {
+  .pathology {
+    margin-left: $h-padding-small;
+
+    flex-grow: 1;
+  }
+}
+
+// 820+
+@media screen and (min-width: 820px) {
+  .pathology {
+    margin-left: $h-padding-medium;
+  }
+}
+
+// Inner styles
+
 .pathology__heading,
 .pathology__heading--sm {
   padding-top: 0;

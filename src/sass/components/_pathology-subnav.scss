@@ -1,3 +1,6 @@
+// Left sidebar area
+
+// Mobile
 .pathology-subnav {
   margin-top: $v-main;
   padding: 32px 16px;
@@ -5,41 +8,37 @@
   border-top: 1px solid $sep-light;
 }
 
+// 680+
 @media screen and (min-width: 680px) {
   .pathology-subnav {
-    max-width: 240px;
     margin-top: 0;
-    margin-right: 48px;
+    margin-right: $h-padding-small;
     margin-bottom: 0;
     padding: 0;
 
     border-top: none;
 
-    flex: 1 1 100%;
+    flex: 0 0 $h-side-small;
     order: -1;
   }
 }
 
+// 820+
 @media screen and (min-width: 820px) {
   .pathology-subnav {
-    max-width: 280px;
-
-    flex: 1 1 100%;
+    flex: 0 0 $h-side-medium;
   }
 }
 
+// 960+
 @media screen and (min-width: 960px) {
   .pathology-subnav {
-    max-width: 300px;
-
-    flex: 1 1 100%;
+    flex: 0 0 $h-side-big;
   }
 }
 
 
-
-
-
+// Inner styles
 
 .pathology-subnav__list {
   margin: 0;

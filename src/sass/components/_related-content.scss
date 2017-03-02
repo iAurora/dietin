@@ -1,36 +1,39 @@
+// Right sidebar area
+
+// Mobile
 .related-content {
   margin-top: $v-main;
   margin-bottom: -$v-main;
 }
 
+// 680+
 @media screen and (min-width: 680px) {
   .related-content {
-    max-width: 240px;
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 16px;
+    margin-left: $h-padding-small;
 
-    flex: 1 1 100%;
+    flex: 0 0 $h-side-small;
   }
 }
 
+// 820+
 @media screen and (min-width: 820px) {
   .related-content {
-    max-width: 300px;
-
-    flex: 1 1 100%;
+    flex: 0 0 $h-side-medium;
   }
 }
 
+
+// 960+
 @media screen and (min-width: 960px) {
   .related-content {
-    max-width: 340px;
-
-    flex: 1 1 100%;
+    flex: 0 0 $h-side-big;
   }
 }
 
 
+// Inner styles
 
 .related-header {
   font-size: 14px;
@@ -93,7 +96,7 @@
 .related-list__title {
   font-size: 14px;
   font-weight: $normal;
-  line-height: 20px;
+  line-height: 1.4;
 
   margin: 0;
   padding: 0;

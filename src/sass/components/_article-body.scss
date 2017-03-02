@@ -1,16 +1,29 @@
+// 680+
 @media screen and (min-width: 680px) {
   .article {
-    padding-right: 24px;
+    margin-right: $h-padding-small;
 
     flex: 1 1 auto;
   }
 }
 
-@media screen and (min-width: $h-max) {
+//820 +
+@media screen and (min-width: 820px) {
   .article {
-    padding-right: 32px;
+    margin-right: $h-padding-medium;
   }
 }
+
+
+// 960+
+@media screen and (min-width: 960px) {
+  .article {
+    margin-right: $h-padding-big;
+  }
+}
+
+
+// Inner styles
 
 .article__header {
   font-family: $sans-serif-2;
@@ -58,6 +71,5 @@
 }
 
 .article__content {
-  max-width: 678px;
   padding-bottom: 48px;
 }
