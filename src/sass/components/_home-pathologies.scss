@@ -1,0 +1,78 @@
+.home-pathologies {
+  margin-top: 40px;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+
+.home-pathology__img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
+.home_pathology__voice {
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.7;
+
+  display: block;
+
+  padding: 32px 0 16px 40px;
+
+  color: $support-uno;
+}
+
+
+.home-pathology__list {
+  margin-top: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.home-pathology__item {
+  border-bottom: 1px solid $sep-light;
+}
+
+.home-pathology__item:last-child {
+  border-bottom: none;
+}
+
+
+.home-pathology__link {
+  font-size: 15px;
+  line-height: 24px;
+
+  display: block;
+
+  padding: 12px 36px;
+
+  text-decoration: none;
+}
+
+
+@media screen and (min-width: 680px) {
+  .home-pathologies {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    flex: 1 1 $h-side-small;
+  }
+  .home-content__wrapper {
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .home-pathologies {
+    flex: 0 0 $h-side-medium;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .home-pathologies {
+    flex: 0 0 $h-side-big;
+  }
+}

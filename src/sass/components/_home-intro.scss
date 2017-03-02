@@ -1,0 +1,71 @@
+
+
+////////////////////
+
+.homebody {
+  line-height: 24px;
+
+  color: $text-normal;
+}
+
+.homebody-sm {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.meaningful {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 28px;
+
+  margin-top: 0;
+
+  color: $text-black;
+}
+
+
+
+
+
+//////////////////////////
+
+
+.home-intro {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  border-bottom: 3px solid $sep-light;
+}
+
+@media screen and (min-width: 680px) {
+  .home-content__wrapper {
+    margin-left: $h-padding-big;
+
+    flex: 1 1 auto;
+  }
+
+  .home-intro {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .home-content__wrapper {
+    margin-left: $h-padding-huge;
+  }
+  .home-intro {
+    border: none;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .home-content__wrapper {
+    margin-right: 56px;
+    margin-left: 104px;
+  }
+  .home-intro {
+    // padding: 0 64px 64px 64px;
+    padding-top: 0;
+    padding-bottom: 64px;
+  }
+}
