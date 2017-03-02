@@ -1,0 +1,44 @@
+
+.home-specialists {
+  padding-top: 32px;
+
+  border-top: 1px solid $sep-light;
+}
+
+
+@media screen and (min-width: 680px) {
+  .home-specialists__heading {
+    text-align: left;
+  }
+}
+
+
+
+@media screen and (min-width: 920px) {
+  .home-specialists {
+    padding-top: 64px;
+
+    border-top: none;
+  }
+}
+
+
+
+
+.home-specialists__heading {
+  text-align: center;
+}
+
+.home-specialists__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.home-specialists__item {
+  font-size: 14px;
+  line-height: 1.43;
+
+  padding-bottom: 16px;
+}
