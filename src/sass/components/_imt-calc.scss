@@ -15,7 +15,7 @@
     margin-bottom: 0;
     padding: 8px;
 
-    background-image: url('../img/calc-bg.jpg');
+    background-image: url('../img/calc-bg-d.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -25,7 +25,7 @@
     padding: 16px 24px 24px;
 
     border-right: 1px solid $sep-light;
-    background: rgba(white, .95);
+    background: rgba(white, .97);
   }
   .calc-result {
     display: block;
@@ -34,7 +34,7 @@
   .calc-info {
     padding: 16px 24px 24px;
 
-    background: rgba(white, .95);
+    background: rgba(white, .97);
   }
 }
 
