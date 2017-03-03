@@ -41,6 +41,10 @@
   border-radius: 0;
 }
 
+input:invalid {
+  box-shadow: none;
+}
+
 textarea.form-input {
   height: 160px;
   padding: 16px;
