@@ -4,3 +4,47 @@
     padding-right: 24px;
   }
 }
+
+.recipe-method ol {
+  position: relative;
+
+  padding-top: 1em;
+  padding-left: 24px;
+
+  list-style-type: none;
+}
+
+.recipe-method ol li {
+  position: relative;
+
+  margin-bottom: 1em;
+
+  counter-increment: counter;
+}
+
+.recipe-method ol li:last-child {
+  margin-bottom: 0;
+}
+
+.recipe-method ol li::before {
+  font-size: .6em;
+  font-weight: $bold;
+
+  position: absolute;
+  top: 4px;
+  left: -22px;
+
+  display: flex;
+
+  width: 16px;
+  height: 16px;
+
+  content: counter(counter);
+
+  color: white;
+  border-radius: 50%;
+  background-color: $primary;
+
+  align-items: center;
+  justify-content: center;
+}

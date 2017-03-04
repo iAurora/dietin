@@ -73,8 +73,8 @@
 
 .article-list__item {
   font-family: $sans-serif-2;
-  font-size: 18px;
-  font-weight: $light;
+  font-size: 17px;
+  font-weight: $normal;
 
   border-bottom: 1px solid $sep-light;
 }
@@ -82,7 +82,7 @@
 .article-list__link {
   line-height: 1.5;
 
-  padding: 16px 0;
+  padding: 12px 0;
 
   transition: all .3s ease;
   text-decoration: none;

@@ -12,3 +12,4 @@ $( function() {
 //= modules/_mobile-nav.js
 //= modules/_expand-nutrients.js
 //= modules/_imt-calc.js
+//= modules/_responsive-video.js

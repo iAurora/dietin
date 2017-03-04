@@ -5,6 +5,9 @@
   border-top: 1px solid $sep-light;
 }
 
+.home-specialists__heading {
+  text-align: center;
+}
 
 @media screen and (min-width: 680px) {
   .home-specialists__heading {
@@ -23,11 +26,6 @@
 }
 
 
-
-
-.home-specialists__heading {
-  text-align: center;
-}
 
 .home-specialists__list {
   margin: 0;
