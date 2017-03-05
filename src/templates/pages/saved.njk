@@ -1,0 +1,100 @@
+{% set pageName = "saved" %}
+{% set pathology = "" %}
+{% set title = 'Сохранённые рецепты - Diet In' %}
+{% set description = 'Описание страницы' %}
+{% extends 'base.njk' %}
+
+{% block content -%}
+
+  <div class="width-container hor-padding-container">
+
+    <ul class="breadcrumbs breadcrumbs--single">
+      <li class="breadcrumbs__item"><a class="link--support link--support-on-white" href="#">Главная</a></li>
+      <li class="breadcrumbs__item">Сохранённые рецепты</li>
+    </ul>
+
+  </div>
+
+
+  {# main wrapper #}
+  <div class="flex-container hor-padding-container ver-padding-xx-container width-container">
+
+    {#{% include "partials/search-filter.njk" %}#}
+
+    {# search content #}
+    <div class="search-results">
+
+      <h1 class="section-heading">Сохранённые рецепты:</h1>
+
+
+      <ul class="search-result">
+
+        <li class="search-result__item">
+          <div class="search-result__thumb">
+            <img class="related-list__thumb" src="img/thmbs/recipe-thumb-1.jpg" />
+          </div>
+          <div class="search-result__text">
+            <h4 class="search-result__title">Нарушения глотания</h4>
+            <p class="search-result__content">Нарушения глотания зачастую возникают у людей, перенесших инсульт, страдающих <mark>болезнью Паркинсона</mark> или злокачественными опухолями головного мозга и области шеи, особенно на фоне проводимой лучевой терапии...</p>
+            <ul class="search-result__nutrients">{% for nutrient in nutrients %}<li>{{ nutrient.name }} &mdash; {{ nutrient.amount }}{{ nutrient.unit }}</li>{% endfor %}</ul>
+          </div>
+          <a href="#" class="search-result__link"></a>
+        </li>
+
+        <li class="search-result__item">
+          <div class="search-result__thumb">
+            <img class="related-list__thumb" src="img/thmbs/recipe-thumb-2.jpg" />
+          </div>
+          <div class="search-result__text">
+            <h4 class="search-result__title"><mark>Нарушение глотания</mark> при инсультах. Особенности ведения пациента с дисфагией.</h4>
+            <p class="search-result__content">...глотательной функции способствуют проведение реабилитационных упражнений, рефлексотерапия, электростимуляция глоточных мышц, транскраниальная магнитная стимуляция и метод биологической обратной связи...</p>
+            <ul class="search-result__nutrients">{% for nutrient in nutrients %}<li>{{ nutrient.name }} &mdash; {{ nutrient.amount }}{{ nutrient.unit }}</li>{% endfor %}</ul>
+          </div>
+          <a href="#" class="search-result__link"></a>
+        </li>
+
+        <li class="search-result__item">
+          <div class="search-result__thumb">
+            <img class="related-list__thumb" src="img/thmbs/recipe-thumb-3.jpg" />
+          </div>
+          <div class="search-result__text">
+            <h4 class="search-result__title">Федеральные клинические рекомендации по оказанию медицинской помощи детям с кистозным фиброзом (<mark>муковисцидозом</mark>)</h4>
+            <p class="search-result__content">..клинические рекомендации подготовлены совместно с Всероссийской ассоциацией для больных <mark>муковисцидозом</mark>, рассмотрены и утверждены на заседании Исполкома профессиональной ассоциации детских врачей Союза педиатров...</p>
+            <ul class="search-result__nutrients">{% for nutrient in nutrients %}<li>{{ nutrient.name }} &mdash; {{ nutrient.amount }}{{ nutrient.unit }}</li>{% endfor %}</ul>
+          </div>
+          <a href="#" class="search-result__link"></a>
+        </li>
+
+        <li class="search-result__item">
+          <div class="search-result__thumb">
+            <img class="related-list__thumb" src="img/thmbs/recipe-thumb-4.jpg" />
+          </div>
+          <div class="search-result__text">
+            <h4 class="search-result__title">Нарушения глотания</h4>
+            <p class="search-result__content">Нарушения глотания зачастую возникают у людей, перенесших инсульт, страдающих <mark>болезнью Паркинсона</mark> или злокачественными опухолями головного мозга и области шеи, особенно на фоне проводимой лучевой терапии...</p>
+            <ul class="search-result__nutrients">{% for nutrient in nutrients %}<li>{{ nutrient.name }} &mdash; {{ nutrient.amount }}{{ nutrient.unit }}</li>{% endfor %}</ul>
+          </div>
+          <a href="#" class="search-result__link"></a>
+        </li>
+
+        <li class="search-result__item">
+          <div class="search-result__thumb">
+            <img class="related-list__thumb" src="img/thmbs/recipe-thumb-5.jpg" />
+          </div>
+          <div class="search-result__text">
+            <h4 class="search-result__title">Нарушения глотания</h4>
+            <p class="search-result__content">Нарушения глотания зачастую возникают у людей, перенесших инсульт, страдающих <mark>болезнью Паркинсона</mark> или злокачественными опухолями головного мозга и области шеи, особенно на фоне проводимой лучевой терапии...</p>
+            <ul class="search-result__nutrients">{% for nutrient in nutrients %}<li>{{ nutrient.name }} &mdash; {{ nutrient.amount }}{{ nutrient.unit }}</li>{% endfor %}</ul>
+          </div>
+          <a href="#" class="search-result__link"></a>
+        </li>
+
+      </ul>
+
+    </div>
+    {# / search content #}
+
+  </div>
+  {# / main wrapper #}
+
+{%- endblock %}
