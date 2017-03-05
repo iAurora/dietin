@@ -1,12 +1,5 @@
 svg4everybody({ polyfill: true });
 
-$( function() {
-    $( "#accordion" ).accordion({
-      collapsible: true,
-      heightStyle: "content"
-    });
-  } );
-
 //= modules/_header.js
 //= modules/_toggles.js
 //= modules/_mobile-nav.js

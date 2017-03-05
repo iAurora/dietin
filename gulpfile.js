@@ -81,7 +81,8 @@ gulp.task('comb', function() {
 });
 
 // compile, preffix and minify with sourcemaps
-gulp.task('sass', ['comb'], function() {
+// gulp.task('sass', ['comb'], function() {
+gulp.task('sass', function() {
   return gulp.src('src/sass/main.scss')
     .pipe(plumber({ errorHandler: onError }))
     .pipe(sourcemaps.init())
