@@ -6,6 +6,11 @@
   justify-content: space-between;
 }
 
+.recipes-grid__container:after {
+  content: "";
+  flex: auto;
+}
+
 .recipe-card {
   position: relative;
 

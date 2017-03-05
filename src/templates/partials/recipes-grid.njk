@@ -1,7 +1,7 @@
 <div class="recipes-grid__container gallery-grid">
 
   {# recipes in data/data.json #}
-  {% for recipe in recipes %}
+  {% for recipe in recipes | batch(11) | first %}
 
   <div class="recipe-card gallery-item">
 
