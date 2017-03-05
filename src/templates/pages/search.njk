@@ -1,0 +1,44 @@
+{% set pageName = "search" %}
+{% set pathology = "" %}
+{% set title = 'Результаты поиска - Diet In' %}
+{% set description = 'Описание страницы' %}
+{% extends 'base.njk' %}
+
+{% block content -%}
+
+  <div class="width-container hor-padding-container">
+
+    <ul class="breadcrumbs breadcrumbs--single">
+      <li class="breadcrumbs__item"><a class="link--support link--support-on-white" href="#">Главная</a></li>
+      <li class="breadcrumbs__item">Результаты поиска: Фраза - запрос</li>
+    </ul>
+
+  </div>
+
+
+  {# main wrapper #}
+  <div class="flex-container hor-padding-container ver-padding-xx-container width-container">
+
+    {% include "partials/search-filter.njk" %}
+
+    {# search content #}
+    <div class="search-results">
+
+      {# search form #}
+      <form id="searchPageSearch" class="search-page__form" method="get" role="search">
+        <input type="text" class="form-input search-page__field" placeholder="Что вас интересует?" id="searchField"/>
+        <input type="submit" class="search-page__submit" value="Найти" id="submitBtn" />
+      </form>
+      {# / search form #}
+
+      <h1 class="section-heading search-results__heading">Результаты поиска:</h1>
+
+      {% include "partials/search-feed.njk" %}
+
+    </div>
+    {# / search content #}
+
+  </div>
+  {# / main wrapper #}
+
+{%- endblock %}

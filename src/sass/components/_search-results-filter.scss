@@ -1,0 +1,53 @@
+// Left sidebar area
+
+// Mobile
+.search-results-filter {
+  // margin-top: $v-main;
+  // padding: 32px 16px;
+
+  // border-top: 1px solid $sep-light;
+}
+
+// 680+
+@media screen and (min-width: 680px) {
+  .search-results-filter {
+    margin-top: 0;
+    margin-right: $h-padding-small;
+    margin-bottom: 0;
+    padding: 0;
+
+    border-top: none;
+
+    flex: 0 0 $h-side-small;
+    order: -1;
+  }
+}
+
+// 820+
+@media screen and (min-width: 820px) {
+  .search-results-filter {
+    flex: 0 0 $h-side-medium;
+  }
+}
+
+// 960+
+@media screen and (min-width: 960px) {
+  .search-results-filter {
+    flex: 0 0 $h-side-big;
+  }
+}
+
+// inner styles
+.search-filter {
+  margin-bottom: 40px;
+  margin-left: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.search-filter__item {
+  font-size: 13px;
+
+  margin-bottom: 1em;
+}

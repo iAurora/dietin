@@ -1,0 +1,199 @@
+// 680+
+@media screen and (min-width: 680px) {
+  .search-results {
+    margin-left: $h-padding-small;
+
+    flex-grow: 1;
+  }
+}
+
+// 820+
+@media screen and (min-width: 820px) {
+  .search-results {
+    margin-left: $h-padding-medium;
+  }
+}
+
+// Inner styles
+
+.search-results__heading {
+  margin: 0;
+  margin-bottom: -16px;
+  padding: 0;
+}
+
+// Search field
+
+.search-page__form {
+  display: flex;
+
+  margin-bottom: 40px;
+}
+
+.search-page__field {
+  width: 100%;
+  height: 40px;
+  padding: 0 24px;
+
+  border: 1px solid $sep-dark;
+}
+
+.search-page__field::placeholder {
+  font-family: $sans-serif;
+  font-style: italic;
+
+  transition: color .3s ease;
+
+  color: $text-pale;
+}
+
+.search-page__field:focus::placeholder {
+  color: white;
+}
+
+
+.search-page__field:focus,
+.search-page__submit:focus {
+  outline: none;
+}
+
+.search-page__field:focus {
+  padding: 0 20px;
+
+  border: 1px solid $primary;
+  border-radius: 0;
+}
+
+.search-page__submit:focus {
+  padding: 0 20px;
+
+  border: 4px solid $primary-link-faded;
+}
+
+
+.search-page__submit {
+  height: 40px;
+  padding: 0 24px;
+
+  cursor: pointer;
+
+  color: $primary-bright;
+  border: 0;
+  border-radius: 0;
+  background-color: $primary-link;
+  &:hover {
+    color: white;
+    background-color: $primary-link-faded;
+  }
+}
+
+
+// Search feed
+
+.search-result {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  mark {
+    color: inherit;
+    background-color: #fff5c1;
+  }
+}
+
+.search-result__heading {
+  font-size: 14px;
+  line-height: 20px;
+
+  margin-top: $v-smaller;
+  margin-bottom: 0;
+  padding: 8px 16px;
+
+  letter-spacing: .3px;
+  text-transform: uppercase;
+
+  color: $text-black;
+  border-left: 4px solid $primary;
+  background: $bg-cold;
+}
+
+.search-result__catlink {
+  font-size: 12px;
+  line-height: 40px;
+
+  display: block;
+
+  height: 40px;
+
+  text-decoration: uppercase;
+
+  border-bottom: 1px solid $sep-light;
+}
+
+.search-result__item {
+  font-size: 13px;
+  line-height: 1.6;
+
+  position: relative;
+
+  display: flex;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid $sep-light;
+
+  &:hover {
+    background-color: $bg-cold-faded;
+  }
+}
+
+.search-result__title {
+  font-family: $sans-serif-2;
+  font-size: 17px;
+  font-weight: $normal;
+  line-height: 1.3333;
+
+  margin: 0;
+  padding: 0;
+
+  color: $text-black;
+}
+
+.search-result__content {
+  margin: 0;
+  padding: 0;
+}
+
+.search-result__nutrients {
+  font-size: 12px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  color: $text-pale;
+
+  li {
+    display: inline;
+  }
+
+  li::after {
+    content: ', ';
+  }
+  li:last-child::after {
+    content: '';
+  }
+}
+
+.search-result__link {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+
+  width: 100%;
+  height: 100%;
+}
