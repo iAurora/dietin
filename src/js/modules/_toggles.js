@@ -10,6 +10,7 @@
     var $toggleMobileBtn = $('.js-mobile-nav-btn');
     var $toggledMobile = $('.js-mobile-nav');
     var $mobileOverlay = $('.js-mobile-nav-overlay');
+    var $toggleFavBtn = $('.js-fav-btn'); // tmp fav
 
     function toggleMenu (e) {
       $toggleMenuBtn.toggleClass('is-open');
@@ -25,6 +26,10 @@
       $toggleMobileBtn.toggleClass('is-open');
       $toggledMobile.toggleClass('is-open');
       $mobileOverlay.toggle();
+    }
+
+    function toggleActiveState (e) {
+      $(this).toggleClass('is-active');
     }
 
     function hideMenu (e) {
@@ -51,6 +56,7 @@
       $toggleMenuBtn.on('click', toggleMenu);
       $toggleSearchBtn.on('click', toggleSearch);
       $toggleMobileBtn.on('click', toggleMobile);
+      $toggleFavBtn.on('click', toggleActiveState); // tmp fav
       $html.on('click', hideMenu);
       $html.on('click', hideSearch);
       $html.on('click', hideMobile);

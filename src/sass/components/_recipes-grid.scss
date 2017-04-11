@@ -7,7 +7,8 @@
 }
 
 .recipes-grid__container:after {
-  content: "";
+  content: '';
+
   flex: auto;
 }
 
@@ -54,11 +55,22 @@
 
   transition: all .3s linear;
 
-  background-image: linear-gradient(-180deg, rgba(50,59,60,.00) 0%, rgba(22,27,28,.69) 100%);
+  opacity: .65;
+  background-image: linear-gradient(-180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
 }
 
 .recipe-card:hover .recipe-thumb__gradient {
-  opacity: .7;
+  opacity: .65;
+  background-image: linear-gradient(-180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.recipe-card:hover {
+  transform: scale(1.07);
+  border: none;
+}
+
+.recipe-card:hover .recipe-card__conditions {
+  background: $sep-light;
 }
 
 
@@ -72,17 +84,37 @@
 
   display: block;
 
-  padding: 2px 8px 4px;
+  padding: 2px 6px 4px;
 
   transition: all .3s ease;
 
   color: white;
   border-radius: 2px;
-  background-color: $support-dos;
+  background-color: $support-uno;
 }
 
 .recipe-thumb__label:hover {
   background-color: $support-dos-bold;
+}
+
+
+.recipe-thumb__fav {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+
+  display: flex;
+
+  width: 32px;
+  height: 32px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.recipe-thumb__fav.is-active {
+  background-color: white;
 }
 
 .recipe-thumb__heading {

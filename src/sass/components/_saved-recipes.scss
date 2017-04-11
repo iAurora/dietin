@@ -1,0 +1,133 @@
+// .saved-recipe {
+//   margin: 0;
+//   padding: 0;
+
+//   list-style: none;
+
+//   mark {
+//     color: inherit;
+//     background-color: #fff5c1;
+//   }
+// }
+
+
+
+
+// .saved-recipe__item {
+//   font-size: 14px;
+//   line-height: 1.6;
+
+//   display: flex;
+
+//   padding-top: 24px;
+//   padding-bottom: 24px;
+
+//   align-content: flex-start;
+//   // border-bottom: 1px solid $sep-light;
+//   border: 1px solid $sep-light;
+// }
+
+// .saved-recipe__thumb {
+//   display: block;
+
+//   width: 176px;
+//   height: 132px;
+//   margin-right: 16px;
+
+//   flex-shrink: 0;
+// }
+
+// .saved-recipe__text {
+//   padding: 0;
+//   margin: 0;
+//   flex-grow: 1;
+// }
+
+// .saved-recipe__label {
+//   font-size: 11px;
+//   line-height: 1;
+
+//   display: inline-block;
+
+//   padding: 1px 5px 4px;
+//   margin: 0;
+
+//   border-radius: 2px;
+//   border: 1px solid $support-dos;
+//   color: $support-dos;
+// }
+
+// .saved-recipe__title {
+//   font-family: $sans-serif-2;
+//   font-size: 22px;
+//   font-weight: $medium;
+//   line-height: 1.3333;
+
+//   margin-top: 0.2em;
+//   margin-bottom: 0.2em;
+//   padding: 0;
+// }
+
+// .saved-recipe__link--heading {
+//   color: $text-black;
+//   &:hover {
+//     color: $text-normal;
+//   }
+// }
+
+// .saved-recipe__pathologies {
+//   font-style: italic;
+//   font-size: 14px;
+//   margin: 0;
+//   padding: 0;
+//   padding-top: 0.5em;
+//   em {
+//     font-size: 11px;
+//     font-style: normal;
+//     font-weight: bold;
+//     letter-spacing: .3px;
+//     text-transform: uppercase;
+//   }
+// }
+
+// .saved-recipe__nutrients {
+//   font-size: 14px;
+
+//   margin: 0;
+//   padding: 0;
+
+//   list-style: none;
+
+//   li {
+//     display: inline;
+//   }
+
+//   li::after {
+//     content: ', ';
+//   }
+//   li:last-child::after {
+//     content: '';
+//   }
+// }
+
+// .saved-recipe-remove {
+//   display: inline-block;
+//   margin-top: 0.5em;
+//   font-size: 12px;
+// }
+
+.recipe-card__conditions {
+  font-size: 10px;
+
+  margin-top: 24px;
+  margin-right: -16px;
+  margin-bottom: -24px;
+  margin-left: -16px;
+  padding: 8px 16px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: $bg-cold;
+  // color: $support-uno;
+}

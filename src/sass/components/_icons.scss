@@ -37,3 +37,23 @@
 .pathology-subnav__link.is-active .pathology-subnav-icon {
   color: $primary;
 }
+
+
+
+// Favorites toggle
+
+.icon-heart {
+  fill: white;
+  fill-opacity: 0;
+  width: 20px;
+  // transition: all .1s ease-in;
+}
+
+.recipe-card:hover .icon-heart {
+  fill-opacity: 1;
+}
+
+.recipe-thumb__fav.is-active .icon-heart {
+  fill-opacity: 1;
+  fill: $support-dos;
+}

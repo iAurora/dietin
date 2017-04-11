@@ -348,86 +348,759 @@
   </div>
 
 
+  <div class="width-container hor-padding-container ver-padding-xx-container">
+
+  <h1 class="section-heading">Сохранённые рецепты</h1>
+
+  <ul class="recipes-filter">
+  <li class="recipes-filter__item recipes-filter__item--chosen">Все</li>
+  <li class="recipes-filter__item"><a class="link" href="#">Супы</a></li>
+  <li class="recipes-filter__item"><a class="link" href="#">Вторые блюда</a></li>
+  <li class="recipes-filter__item"><a class="link" href="#">Каши</a></li>
+  <li class="recipes-filter__item"><a class="link" href="#">Закуски</a></li>
+  <li class="recipes-filter__item"><a class="link" href="#">Салаты</a></li>
+  <li class="recipes-filter__item"><a class="link" href="#">Дессерты</a></li>
+  <li class="recipes-filter__item"><a class="link" href="#">Выпечка</a></li>
+  <li class="recipes-filter__item"><a class="link" href="#">Напитки</a></li>
+</ul>
+
+  <ul class="recipes-filter recipes-filter--sc">
+  <li class="recipes-filter__item"><a class="link" href="#">Все состояния</a></li>
+  <li class="recipes-filter__item recipes-filter__item--chosen">Зрелый возраст</li>
+  <li class="recipes-filter__item"><a class="link" href="#">Онкологические заболевания</a></li>
+</ul>
+
+  <div class="recipes-grid__container gallery-grid">
+
   
-  <div class="flex-container hor-padding-container ver-padding-xx-container width-container">
+  
 
-    
+  <div class="recipe-card gallery-item">
 
-    
-    <div class="search-results">
+    <div class="recipe-thumb__wrapper">
+      <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-1.jpg" />
+      <div class="recipe-thumb__gradient"></div>
+       <a class="recipe-thumb__label link--stealth" href="#0">супы</a>
 
-      <h1 class="section-heading">Сохранённые рецепты:</h1>
+       <a href="#0" class="js-fav-btn recipe-thumb__fav is-active">
+        <svg class="icon icon-heart js-icon-fav">
+          <use xlink:href="svg/sprite.svg#icon-heart"></use>
+        </svg>
+      </a>
 
-
-      <ul class="search-result">
-
-        <li class="search-result__item">
-          <div class="search-result__thumb">
-            <img class="related-list__thumb" src="img/thmbs/recipe-thumb-1.jpg" />
-          </div>
-          <div class="search-result__text">
-            <h4 class="search-result__title">Нарушения глотания</h4>
-            <p class="search-result__content">Нарушения глотания зачастую возникают у людей, перенесших инсульт, страдающих <mark>болезнью Паркинсона</mark> или злокачественными опухолями головного мозга и области шеи, особенно на фоне проводимой лучевой терапии...</p>
-            <ul class="search-result__nutrients"><li>Энергия &mdash; 250ккал</li><li>Белок &mdash; 30г</li><li>Докозапентаеновая (ДПК) &mdash; 80мг</li><li>Натрий &mdash; 89мг</li><li>Калий &mdash; 612мг</li></ul>
-          </div>
-          <a href="#" class="search-result__link"></a>
-        </li>
-
-        <li class="search-result__item">
-          <div class="search-result__thumb">
-            <img class="related-list__thumb" src="img/thmbs/recipe-thumb-2.jpg" />
-          </div>
-          <div class="search-result__text">
-            <h4 class="search-result__title"><mark>Нарушение глотания</mark> при инсультах. Особенности ведения пациента с дисфагией.</h4>
-            <p class="search-result__content">...глотательной функции способствуют проведение реабилитационных упражнений, рефлексотерапия, электростимуляция глоточных мышц, транскраниальная магнитная стимуляция и метод биологической обратной связи...</p>
-            <ul class="search-result__nutrients"><li>Энергия &mdash; 250ккал</li><li>Белок &mdash; 30г</li><li>Докозапентаеновая (ДПК) &mdash; 80мг</li><li>Натрий &mdash; 89мг</li><li>Калий &mdash; 612мг</li></ul>
-          </div>
-          <a href="#" class="search-result__link"></a>
-        </li>
-
-        <li class="search-result__item">
-          <div class="search-result__thumb">
-            <img class="related-list__thumb" src="img/thmbs/recipe-thumb-3.jpg" />
-          </div>
-          <div class="search-result__text">
-            <h4 class="search-result__title">Федеральные клинические рекомендации по оказанию медицинской помощи детям с кистозным фиброзом (<mark>муковисцидозом</mark>)</h4>
-            <p class="search-result__content">..клинические рекомендации подготовлены совместно с Всероссийской ассоциацией для больных <mark>муковисцидозом</mark>, рассмотрены и утверждены на заседании Исполкома профессиональной ассоциации детских врачей Союза педиатров...</p>
-            <ul class="search-result__nutrients"><li>Энергия &mdash; 250ккал</li><li>Белок &mdash; 30г</li><li>Докозапентаеновая (ДПК) &mdash; 80мг</li><li>Натрий &mdash; 89мг</li><li>Калий &mdash; 612мг</li></ul>
-          </div>
-          <a href="#" class="search-result__link"></a>
-        </li>
-
-        <li class="search-result__item">
-          <div class="search-result__thumb">
-            <img class="related-list__thumb" src="img/thmbs/recipe-thumb-4.jpg" />
-          </div>
-          <div class="search-result__text">
-            <h4 class="search-result__title">Нарушения глотания</h4>
-            <p class="search-result__content">Нарушения глотания зачастую возникают у людей, перенесших инсульт, страдающих <mark>болезнью Паркинсона</mark> или злокачественными опухолями головного мозга и области шеи, особенно на фоне проводимой лучевой терапии...</p>
-            <ul class="search-result__nutrients"><li>Энергия &mdash; 250ккал</li><li>Белок &mdash; 30г</li><li>Докозапентаеновая (ДПК) &mdash; 80мг</li><li>Натрий &mdash; 89мг</li><li>Калий &mdash; 612мг</li></ul>
-          </div>
-          <a href="#" class="search-result__link"></a>
-        </li>
-
-        <li class="search-result__item">
-          <div class="search-result__thumb">
-            <img class="related-list__thumb" src="img/thmbs/recipe-thumb-5.jpg" />
-          </div>
-          <div class="search-result__text">
-            <h4 class="search-result__title">Нарушения глотания</h4>
-            <p class="search-result__content">Нарушения глотания зачастую возникают у людей, перенесших инсульт, страдающих <mark>болезнью Паркинсона</mark> или злокачественными опухолями головного мозга и области шеи, особенно на фоне проводимой лучевой терапии...</p>
-            <ul class="search-result__nutrients"><li>Энергия &mdash; 250ккал</li><li>Белок &mdash; 30г</li><li>Докозапентаеновая (ДПК) &mdash; 80мг</li><li>Натрий &mdash; 89мг</li><li>Калий &mdash; 612мг</li></ul>
-          </div>
-          <a href="#" class="search-result__link"></a>
-        </li>
-
-      </ul>
-
+      <h2 class="recipe-thumb-heading recipe-thumb__heading">Tарелка со множеством вкусных вещей</h2>
     </div>
-    
+
+    <ul class="recipe-card-nutrients">
+
+      
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Энергия
+          <em class="recipe-card-nutrients__unit">(ккал)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">250</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Белок
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">30</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Жиры
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">3</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Углеводы
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">22</span>
+      </li>
+      
+
+      <div class="recipe-card__conditions">
+      Зрелый возраст
+      </div>
+
+
+
+    </ul>
+
+    <a href="#" class="recipe-card__link"></a>
 
   </div>
-  
+
+
+
+  <div class="recipe-card gallery-item">
+
+    <div class="recipe-thumb__wrapper">
+      <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-2.jpg" />
+      <div class="recipe-thumb__gradient"></div>
+       <a class="recipe-thumb__label link--stealth" href="#0">дессерты</a>
+
+       <a href="#0" class="js-fav-btn recipe-thumb__fav is-active">
+        <svg class="icon icon-heart js-icon-fav">
+          <use xlink:href="svg/sprite.svg#icon-heart"></use>
+        </svg>
+      </a>
+
+      <h2 class="recipe-thumb-heading recipe-thumb__heading">Блинчики с мёдом</h2>
+    </div>
+
+    <ul class="recipe-card-nutrients">
+
+      
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Энергия
+          <em class="recipe-card-nutrients__unit">(ккал)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">250</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Белок
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">30</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Жиры
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">3</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Углеводы
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">22</span>
+      </li>
+      
+
+      <div class="recipe-card__conditions">
+      Зрелый возраст
+      </div>
+
+
+
+    </ul>
+
+    <a href="#" class="recipe-card__link"></a>
+
+  </div>
+
+
+
+  <div class="recipe-card gallery-item">
+
+    <div class="recipe-thumb__wrapper">
+      <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-3.jpg" />
+      <div class="recipe-thumb__gradient"></div>
+       <a class="recipe-thumb__label link--stealth" href="#0">салаты</a>
+
+       <a href="#0" class="js-fav-btn recipe-thumb__fav is-active">
+        <svg class="icon icon-heart js-icon-fav">
+          <use xlink:href="svg/sprite.svg#icon-heart"></use>
+        </svg>
+      </a>
+
+      <h2 class="recipe-thumb-heading recipe-thumb__heading">Салат из тигровых креветок</h2>
+    </div>
+
+    <ul class="recipe-card-nutrients">
+
+      
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Энергия
+          <em class="recipe-card-nutrients__unit">(ккал)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">250</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Белок
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">30</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Жиры
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">3</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Углеводы
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">22</span>
+      </li>
+      
+
+      <div class="recipe-card__conditions">
+      Зрелый возраст
+      </div>
+
+
+
+    </ul>
+
+    <a href="#" class="recipe-card__link"></a>
+
+  </div>
+
+
+
+  <div class="recipe-card gallery-item">
+
+    <div class="recipe-thumb__wrapper">
+      <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-4.jpg" />
+      <div class="recipe-thumb__gradient"></div>
+       <a class="recipe-thumb__label link--stealth" href="#0">закуски</a>
+
+       <a href="#0" class="js-fav-btn recipe-thumb__fav is-active">
+        <svg class="icon icon-heart js-icon-fav">
+          <use xlink:href="svg/sprite.svg#icon-heart"></use>
+        </svg>
+      </a>
+
+      <h2 class="recipe-thumb-heading recipe-thumb__heading">Сэндвичи с помидорками</h2>
+    </div>
+
+    <ul class="recipe-card-nutrients">
+
+      
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Энергия
+          <em class="recipe-card-nutrients__unit">(ккал)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">250</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Белок
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">30</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Жиры
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">3</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Углеводы
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">22</span>
+      </li>
+      
+
+      <div class="recipe-card__conditions">
+      Зрелый возраст
+      </div>
+
+
+
+    </ul>
+
+    <a href="#" class="recipe-card__link"></a>
+
+  </div>
+
+
+
+  <div class="recipe-card gallery-item">
+
+    <div class="recipe-thumb__wrapper">
+      <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-5.jpg" />
+      <div class="recipe-thumb__gradient"></div>
+       <a class="recipe-thumb__label link--stealth" href="#0">закуски</a>
+
+       <a href="#0" class="js-fav-btn recipe-thumb__fav is-active">
+        <svg class="icon icon-heart js-icon-fav">
+          <use xlink:href="svg/sprite.svg#icon-heart"></use>
+        </svg>
+      </a>
+
+      <h2 class="recipe-thumb-heading recipe-thumb__heading">Поджаристые тосты с джемом или какой-то другой вкусной штукой</h2>
+    </div>
+
+    <ul class="recipe-card-nutrients">
+
+      
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Энергия
+          <em class="recipe-card-nutrients__unit">(ккал)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">250</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Белок
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">30</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Жиры
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">3</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Углеводы
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">22</span>
+      </li>
+      
+
+      <div class="recipe-card__conditions">
+      Зрелый возраст
+      </div>
+
+
+
+    </ul>
+
+    <a href="#" class="recipe-card__link"></a>
+
+  </div>
+
+
+
+  <div class="recipe-card gallery-item">
+
+    <div class="recipe-thumb__wrapper">
+      <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-6.jpg" />
+      <div class="recipe-thumb__gradient"></div>
+       <a class="recipe-thumb__label link--stealth" href="#0">выпечка</a>
+
+       <a href="#0" class="js-fav-btn recipe-thumb__fav is-active">
+        <svg class="icon icon-heart js-icon-fav">
+          <use xlink:href="svg/sprite.svg#icon-heart"></use>
+        </svg>
+      </a>
+
+      <h2 class="recipe-thumb-heading recipe-thumb__heading">Вкусные булочки</h2>
+    </div>
+
+    <ul class="recipe-card-nutrients">
+
+      
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Энергия
+          <em class="recipe-card-nutrients__unit">(ккал)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">250</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Белок
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">30</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Жиры
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">3</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Углеводы
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">22</span>
+      </li>
+      
+
+      <div class="recipe-card__conditions">
+      Зрелый возраст
+      </div>
+
+
+
+    </ul>
+
+    <a href="#" class="recipe-card__link"></a>
+
+  </div>
+
+
+
+  <div class="recipe-card gallery-item">
+
+    <div class="recipe-thumb__wrapper">
+      <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-7.jpg" />
+      <div class="recipe-thumb__gradient"></div>
+       <a class="recipe-thumb__label link--stealth" href="#0">вторые блюда</a>
+
+       <a href="#0" class="js-fav-btn recipe-thumb__fav is-active">
+        <svg class="icon icon-heart js-icon-fav">
+          <use xlink:href="svg/sprite.svg#icon-heart"></use>
+        </svg>
+      </a>
+
+      <h2 class="recipe-thumb-heading recipe-thumb__heading">Гарнир из зелёного горошка</h2>
+    </div>
+
+    <ul class="recipe-card-nutrients">
+
+      
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Энергия
+          <em class="recipe-card-nutrients__unit">(ккал)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">250</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Белок
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">30</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Жиры
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">3</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Углеводы
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">22</span>
+      </li>
+      
+
+      <div class="recipe-card__conditions">
+      Зрелый возраст
+      </div>
+
+
+
+    </ul>
+
+    <a href="#" class="recipe-card__link"></a>
+
+  </div>
+
+
+
+  <div class="recipe-card gallery-item">
+
+    <div class="recipe-thumb__wrapper">
+      <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-8.jpg" />
+      <div class="recipe-thumb__gradient"></div>
+       <a class="recipe-thumb__label link--stealth" href="#0">дессерты</a>
+
+       <a href="#0" class="js-fav-btn recipe-thumb__fav is-active">
+        <svg class="icon icon-heart js-icon-fav">
+          <use xlink:href="svg/sprite.svg#icon-heart"></use>
+        </svg>
+      </a>
+
+      <h2 class="recipe-thumb-heading recipe-thumb__heading">Мороженное в красном соусе</h2>
+    </div>
+
+    <ul class="recipe-card-nutrients">
+
+      
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Энергия
+          <em class="recipe-card-nutrients__unit">(ккал)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">250</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Белок
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">30</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Жиры
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">3</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Углеводы
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">22</span>
+      </li>
+      
+
+      <div class="recipe-card__conditions">
+      Зрелый возраст
+      </div>
+
+
+
+    </ul>
+
+    <a href="#" class="recipe-card__link"></a>
+
+  </div>
+
+
+
+  <div class="recipe-card gallery-item">
+
+    <div class="recipe-thumb__wrapper">
+      <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-9.jpg" />
+      <div class="recipe-thumb__gradient"></div>
+       <a class="recipe-thumb__label link--stealth" href="#0">дессерты</a>
+
+       <a href="#0" class="js-fav-btn recipe-thumb__fav is-active">
+        <svg class="icon icon-heart js-icon-fav">
+          <use xlink:href="svg/sprite.svg#icon-heart"></use>
+        </svg>
+      </a>
+
+      <h2 class="recipe-thumb-heading recipe-thumb__heading">Шоколадные капкейки</h2>
+    </div>
+
+    <ul class="recipe-card-nutrients">
+
+      
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Энергия
+          <em class="recipe-card-nutrients__unit">(ккал)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">250</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Белок
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">30</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Жиры
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">3</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Углеводы
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">22</span>
+      </li>
+      
+
+      <div class="recipe-card__conditions">
+      Зрелый возраст
+      </div>
+
+
+
+    </ul>
+
+    <a href="#" class="recipe-card__link"></a>
+
+  </div>
+
+
+
+  <div class="recipe-card gallery-item">
+
+    <div class="recipe-thumb__wrapper">
+      <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-10.jpg" />
+      <div class="recipe-thumb__gradient"></div>
+       <a class="recipe-thumb__label link--stealth" href="#0">дессерты</a>
+
+       <a href="#0" class="js-fav-btn recipe-thumb__fav is-active">
+        <svg class="icon icon-heart js-icon-fav">
+          <use xlink:href="svg/sprite.svg#icon-heart"></use>
+        </svg>
+      </a>
+
+      <h2 class="recipe-thumb-heading recipe-thumb__heading">Бананы</h2>
+    </div>
+
+    <ul class="recipe-card-nutrients">
+
+      
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Энергия
+          <em class="recipe-card-nutrients__unit">(ккал)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">250</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Белок
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">30</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Жиры
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">3</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Углеводы
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">22</span>
+      </li>
+      
+
+      <div class="recipe-card__conditions">
+      Зрелый возраст
+      </div>
+
+
+
+    </ul>
+
+    <a href="#" class="recipe-card__link"></a>
+
+  </div>
+
+
+
+  <div class="recipe-card gallery-item">
+
+    <div class="recipe-thumb__wrapper">
+      <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-11.jpg" />
+      <div class="recipe-thumb__gradient"></div>
+       <a class="recipe-thumb__label link--stealth" href="#0">дессерты</a>
+
+       <a href="#0" class="js-fav-btn recipe-thumb__fav is-active">
+        <svg class="icon icon-heart js-icon-fav">
+          <use xlink:href="svg/sprite.svg#icon-heart"></use>
+        </svg>
+      </a>
+
+      <h2 class="recipe-thumb-heading recipe-thumb__heading">Макаруны</h2>
+    </div>
+
+    <ul class="recipe-card-nutrients">
+
+      
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Энергия
+          <em class="recipe-card-nutrients__unit">(ккал)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">250</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Белок
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">30</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Жиры
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">3</span>
+      </li>
+      
+      <li class="recipe-card-nutrients__item">
+        <span class="recipe-card-nutrients__key">Углеводы
+          <em class="recipe-card-nutrients__unit">(г)</em>
+        </span>
+        <span class="recipe-card-nutrients__value">22</span>
+      </li>
+      
+
+      <div class="recipe-card__conditions">
+      Зрелый возраст
+      </div>
+
+
+
+    </ul>
+
+    <a href="#" class="recipe-card__link"></a>
+
+  </div>
+
+
+
+</div>
+
+  <div class="pagination__wrapper">
+
+  <ul class="pagination" role="menubar" aria-label="Pagination">
+
+      <li><a class="pagination__link" href="">
+        <svg class="icon pagination__icon">
+          <use xlink:href="svg/sprite.svg#icon-chevron-left"></use>
+        </svg>
+      </a></li>
+
+      <li><a class="pagination__link" href="">1</a></li>
+
+      <li><a class="pagination__link" href="">2</a></li>
+
+      <li><a class="pagination__link pagination__current" href="">3</a></li>
+
+      <li><a class="pagination__link" href="">4</a></li>
+
+      <li><a class="pagination__link" href="">5</a></li>
+
+       <li><a class="pagination__link" href="">
+        <svg class="icon pagination__icon">
+          <use xlink:href="svg/sprite.svg#icon-chevron-right"></use>
+        </svg>
+      </a></li>
+
+    </ul>
+
+</div>
+
+</div>
 
   <footer class="footer">
 
