@@ -43,10 +43,11 @@
 // Favorites toggle
 
 .icon-heart {
-  fill: white;
-  fill-opacity: 0;
   width: 20px;
-  // transition: all .1s ease-in;
+
+  fill: white;
+  fill-opacity: .5;
+  transition: all .1s ease-in;
 }
 
 .recipe-card:hover .icon-heart {
@@ -54,6 +55,19 @@
 }
 
 .recipe-thumb__fav.is-active .icon-heart {
-  fill-opacity: 1;
   fill: $support-dos;
+  fill-opacity: 1;
+}
+
+.icon-heart--onwhite {
+  width: 18px;
+
+  fill-opacity: 0;
+  stroke: $support-dos;
+  stroke-width: 2px;
+}
+
+.addtofavs.is-active .icon-heart--onwhite {
+  fill: $support-dos;
+  fill-opacity: 1;
 }

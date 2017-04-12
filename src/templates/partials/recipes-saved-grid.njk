@@ -8,9 +8,9 @@
     <div class="recipe-thumb__wrapper">
       <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-{{ loop.index }}.jpg" />
       <div class="recipe-thumb__gradient"></div>
-       <a class="recipe-thumb__label link--stealth" href="#0">{{ recipe.type | lower }}</a>
+       <a class="recipe-thumb__label link--stealth" href="javascript:void(0);">{{ recipe.type | lower }}</a>
 
-       <a href="#0" class="js-fav-btn recipe-thumb__fav is-active">
+       <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav is-active">
         <svg class="icon icon-heart js-icon-fav">
           <use xlink:href="svg/sprite.svg#icon-heart"></use>
         </svg>
@@ -32,14 +32,14 @@
       {% endfor %}
 
       <div class="recipe-card__conditions">
-      Зрелый возраст
+        Зрелый возраст
       </div>
 
 
 
     </ul>
 
-    <a href="#" class="recipe-card__link"></a>
+    <a href="javascript:void(0);" class="recipe-card__link"></a>
 
   </div>
 
