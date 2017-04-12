@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Рецепты - Diet In</title>
+  <title>Сохранённые рецепты - Diet In</title>
   <meta name="description" content="Описание страницы">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -338,24 +338,19 @@
 <div class="mobile-nav-overlay js-mobile-nav-overlay"></div>
 
 
-  <div class="section-banner section-banner--recipes">
-  <div class="section-banner__gradient"></div>
+  <div class="width-container hor-padding-container">
 
-<div class="section-banner__inner width-container hor-padding-container">
+    <ul class="breadcrumbs breadcrumbs--single">
+      <li class="breadcrumbs__item"><a class="link--support link--support-on-white" href="#">Главная</a></li>
+      <li class="breadcrumbs__item">Сохранённые рецепты</li>
+    </ul>
 
-  <ul class="breadcrumbs breadcrumbs--banner">
-    <li class="breadcrumbs__item"><a class="link--support" href="#">Главная</a></li>
-    <li class="breadcrumbs__item"><a class="link--support" href="#">Онкологические заболевания</a></li>
-    <li class="breadcrumbs__item">Статьи</li>
-  </ul>
+  </div>
 
-</div>
 
-</div>
+  <div class="width-container hor-padding-container ver-padding-xx-container">
 
-<div class="width-container hor-padding-container ver-padding-xx-container">
-
-  <h1 class="section-heading">Рецепты</h1>
+  <h1 class="section-heading">Сохранённые рецепты</h1>
 
   <ul class="recipes-filter">
   <li><a class="recipes-filter__link recipes-filter__link--chosen" href="#">Всё</a></li>
@@ -369,6 +364,12 @@
   <li><a class="recipes-filter__link" href="#">Напитки</a></li>
 </ul>
 
+  <ul class="recipes-filter recipes-filter--sc">
+  <li><a class="link recipes-filter-sc__link" href="#">Все состояния</a></li>
+  <li><a class="link recipes-filter-sc__link recipes-filter-sc__link--chosen" href="#">Зрелый возраст</a></li>
+  <li><a class="link recipes-filter-sc__link" href="#">Онкологические заболевания</a></li>
+</ul>
+
   <div class="recipes-grid__container gallery-grid">
 
   
@@ -379,9 +380,9 @@
     <div class="recipe-thumb__wrapper">
       <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-1.jpg" />
       <div class="recipe-thumb__gradient"></div>
-      <a class="recipe-thumb__label link--stealth" href="/">супы</a>
+       <a class="recipe-thumb__label link--stealth" href="javascript:void(0);">супы</a>
 
-      <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav">
+       <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav is-active">
         <svg class="icon icon-heart js-icon-fav">
           <use xlink:href="svg/sprite.svg#icon-heart"></use>
         </svg>
@@ -409,30 +410,29 @@
       </li>
       
       <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Докозапентаеновая (ДПК)
-          <em class="recipe-card-nutrients__unit">(мг)</em>
+        <span class="recipe-card-nutrients__key">Жиры
+          <em class="recipe-card-nutrients__unit">(г)</em>
         </span>
-        <span class="recipe-card-nutrients__value">80</span>
+        <span class="recipe-card-nutrients__value">3</span>
       </li>
       
       <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Натрий
-          <em class="recipe-card-nutrients__unit">(мг)</em>
+        <span class="recipe-card-nutrients__key">Углеводы
+          <em class="recipe-card-nutrients__unit">(г)</em>
         </span>
-        <span class="recipe-card-nutrients__value">89</span>
+        <span class="recipe-card-nutrients__value">22</span>
       </li>
       
-      <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Калий
-          <em class="recipe-card-nutrients__unit">(мг)</em>
-        </span>
-        <span class="recipe-card-nutrients__value">612</span>
-      </li>
-      
+
+      <div class="recipe-card__conditions">
+        Зрелый возраст
+      </div>
+
+
 
     </ul>
 
-    <a href="www.yandex.ru" class="recipe-card__link"></a>
+    <a href="javascript:void(0);" class="recipe-card__link"></a>
 
   </div>
 
@@ -443,9 +443,9 @@
     <div class="recipe-thumb__wrapper">
       <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-2.jpg" />
       <div class="recipe-thumb__gradient"></div>
-      <a class="recipe-thumb__label link--stealth" href="/">дессерты</a>
+       <a class="recipe-thumb__label link--stealth" href="javascript:void(0);">дессерты</a>
 
-      <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav">
+       <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav is-active">
         <svg class="icon icon-heart js-icon-fav">
           <use xlink:href="svg/sprite.svg#icon-heart"></use>
         </svg>
@@ -473,30 +473,29 @@
       </li>
       
       <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Докозапентаеновая (ДПК)
-          <em class="recipe-card-nutrients__unit">(мг)</em>
+        <span class="recipe-card-nutrients__key">Жиры
+          <em class="recipe-card-nutrients__unit">(г)</em>
         </span>
-        <span class="recipe-card-nutrients__value">80</span>
+        <span class="recipe-card-nutrients__value">3</span>
       </li>
       
       <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Натрий
-          <em class="recipe-card-nutrients__unit">(мг)</em>
+        <span class="recipe-card-nutrients__key">Углеводы
+          <em class="recipe-card-nutrients__unit">(г)</em>
         </span>
-        <span class="recipe-card-nutrients__value">89</span>
+        <span class="recipe-card-nutrients__value">22</span>
       </li>
       
-      <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Калий
-          <em class="recipe-card-nutrients__unit">(мг)</em>
-        </span>
-        <span class="recipe-card-nutrients__value">612</span>
-      </li>
-      
+
+      <div class="recipe-card__conditions">
+        Зрелый возраст
+      </div>
+
+
 
     </ul>
 
-    <a href="www.yandex.ru" class="recipe-card__link"></a>
+    <a href="javascript:void(0);" class="recipe-card__link"></a>
 
   </div>
 
@@ -507,9 +506,9 @@
     <div class="recipe-thumb__wrapper">
       <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-3.jpg" />
       <div class="recipe-thumb__gradient"></div>
-      <a class="recipe-thumb__label link--stealth" href="/">салаты</a>
+       <a class="recipe-thumb__label link--stealth" href="javascript:void(0);">салаты</a>
 
-      <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav">
+       <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav is-active">
         <svg class="icon icon-heart js-icon-fav">
           <use xlink:href="svg/sprite.svg#icon-heart"></use>
         </svg>
@@ -537,30 +536,29 @@
       </li>
       
       <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Докозапентаеновая (ДПК)
-          <em class="recipe-card-nutrients__unit">(мг)</em>
+        <span class="recipe-card-nutrients__key">Жиры
+          <em class="recipe-card-nutrients__unit">(г)</em>
         </span>
-        <span class="recipe-card-nutrients__value">80</span>
+        <span class="recipe-card-nutrients__value">3</span>
       </li>
       
       <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Натрий
-          <em class="recipe-card-nutrients__unit">(мг)</em>
+        <span class="recipe-card-nutrients__key">Углеводы
+          <em class="recipe-card-nutrients__unit">(г)</em>
         </span>
-        <span class="recipe-card-nutrients__value">89</span>
+        <span class="recipe-card-nutrients__value">22</span>
       </li>
       
-      <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Калий
-          <em class="recipe-card-nutrients__unit">(мг)</em>
-        </span>
-        <span class="recipe-card-nutrients__value">612</span>
-      </li>
-      
+
+      <div class="recipe-card__conditions">
+        Зрелый возраст
+      </div>
+
+
 
     </ul>
 
-    <a href="www.yandex.ru" class="recipe-card__link"></a>
+    <a href="javascript:void(0);" class="recipe-card__link"></a>
 
   </div>
 
@@ -571,9 +569,9 @@
     <div class="recipe-thumb__wrapper">
       <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-4.jpg" />
       <div class="recipe-thumb__gradient"></div>
-      <a class="recipe-thumb__label link--stealth" href="/">закуски</a>
+       <a class="recipe-thumb__label link--stealth" href="javascript:void(0);">закуски</a>
 
-      <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav">
+       <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav is-active">
         <svg class="icon icon-heart js-icon-fav">
           <use xlink:href="svg/sprite.svg#icon-heart"></use>
         </svg>
@@ -601,30 +599,29 @@
       </li>
       
       <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Докозапентаеновая (ДПК)
-          <em class="recipe-card-nutrients__unit">(мг)</em>
+        <span class="recipe-card-nutrients__key">Жиры
+          <em class="recipe-card-nutrients__unit">(г)</em>
         </span>
-        <span class="recipe-card-nutrients__value">80</span>
+        <span class="recipe-card-nutrients__value">3</span>
       </li>
       
       <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Натрий
-          <em class="recipe-card-nutrients__unit">(мг)</em>
+        <span class="recipe-card-nutrients__key">Углеводы
+          <em class="recipe-card-nutrients__unit">(г)</em>
         </span>
-        <span class="recipe-card-nutrients__value">89</span>
+        <span class="recipe-card-nutrients__value">22</span>
       </li>
       
-      <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Калий
-          <em class="recipe-card-nutrients__unit">(мг)</em>
-        </span>
-        <span class="recipe-card-nutrients__value">612</span>
-      </li>
-      
+
+      <div class="recipe-card__conditions">
+        Зрелый возраст
+      </div>
+
+
 
     </ul>
 
-    <a href="www.yandex.ru" class="recipe-card__link"></a>
+    <a href="javascript:void(0);" class="recipe-card__link"></a>
 
   </div>
 
@@ -635,9 +632,9 @@
     <div class="recipe-thumb__wrapper">
       <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-5.jpg" />
       <div class="recipe-thumb__gradient"></div>
-      <a class="recipe-thumb__label link--stealth" href="/">закуски</a>
+       <a class="recipe-thumb__label link--stealth" href="javascript:void(0);">закуски</a>
 
-      <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav">
+       <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav is-active">
         <svg class="icon icon-heart js-icon-fav">
           <use xlink:href="svg/sprite.svg#icon-heart"></use>
         </svg>
@@ -665,30 +662,29 @@
       </li>
       
       <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Докозапентаеновая (ДПК)
-          <em class="recipe-card-nutrients__unit">(мг)</em>
+        <span class="recipe-card-nutrients__key">Жиры
+          <em class="recipe-card-nutrients__unit">(г)</em>
         </span>
-        <span class="recipe-card-nutrients__value">80</span>
+        <span class="recipe-card-nutrients__value">3</span>
       </li>
       
       <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Натрий
-          <em class="recipe-card-nutrients__unit">(мг)</em>
+        <span class="recipe-card-nutrients__key">Углеводы
+          <em class="recipe-card-nutrients__unit">(г)</em>
         </span>
-        <span class="recipe-card-nutrients__value">89</span>
+        <span class="recipe-card-nutrients__value">22</span>
       </li>
       
-      <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Калий
-          <em class="recipe-card-nutrients__unit">(мг)</em>
-        </span>
-        <span class="recipe-card-nutrients__value">612</span>
-      </li>
-      
+
+      <div class="recipe-card__conditions">
+        Зрелый возраст
+      </div>
+
+
 
     </ul>
 
-    <a href="www.yandex.ru" class="recipe-card__link"></a>
+    <a href="javascript:void(0);" class="recipe-card__link"></a>
 
   </div>
 
@@ -699,9 +695,9 @@
     <div class="recipe-thumb__wrapper">
       <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-6.jpg" />
       <div class="recipe-thumb__gradient"></div>
-      <a class="recipe-thumb__label link--stealth" href="/">выпечка</a>
+       <a class="recipe-thumb__label link--stealth" href="javascript:void(0);">выпечка</a>
 
-      <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav">
+       <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav is-active">
         <svg class="icon icon-heart js-icon-fav">
           <use xlink:href="svg/sprite.svg#icon-heart"></use>
         </svg>
@@ -729,30 +725,29 @@
       </li>
       
       <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Докозапентаеновая (ДПК)
-          <em class="recipe-card-nutrients__unit">(мг)</em>
+        <span class="recipe-card-nutrients__key">Жиры
+          <em class="recipe-card-nutrients__unit">(г)</em>
         </span>
-        <span class="recipe-card-nutrients__value">80</span>
+        <span class="recipe-card-nutrients__value">3</span>
       </li>
       
       <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Натрий
-          <em class="recipe-card-nutrients__unit">(мг)</em>
+        <span class="recipe-card-nutrients__key">Углеводы
+          <em class="recipe-card-nutrients__unit">(г)</em>
         </span>
-        <span class="recipe-card-nutrients__value">89</span>
+        <span class="recipe-card-nutrients__value">22</span>
       </li>
       
-      <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Калий
-          <em class="recipe-card-nutrients__unit">(мг)</em>
-        </span>
-        <span class="recipe-card-nutrients__value">612</span>
-      </li>
-      
+
+      <div class="recipe-card__conditions">
+        Зрелый возраст
+      </div>
+
+
 
     </ul>
 
-    <a href="www.yandex.ru" class="recipe-card__link"></a>
+    <a href="javascript:void(0);" class="recipe-card__link"></a>
 
   </div>
 
@@ -763,9 +758,9 @@
     <div class="recipe-thumb__wrapper">
       <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-7.jpg" />
       <div class="recipe-thumb__gradient"></div>
-      <a class="recipe-thumb__label link--stealth" href="/">вторые блюда</a>
+       <a class="recipe-thumb__label link--stealth" href="javascript:void(0);">вторые блюда</a>
 
-      <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav">
+       <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav is-active">
         <svg class="icon icon-heart js-icon-fav">
           <use xlink:href="svg/sprite.svg#icon-heart"></use>
         </svg>
@@ -793,30 +788,29 @@
       </li>
       
       <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Докозапентаеновая (ДПК)
-          <em class="recipe-card-nutrients__unit">(мг)</em>
+        <span class="recipe-card-nutrients__key">Жиры
+          <em class="recipe-card-nutrients__unit">(г)</em>
         </span>
-        <span class="recipe-card-nutrients__value">80</span>
+        <span class="recipe-card-nutrients__value">3</span>
       </li>
       
       <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Натрий
-          <em class="recipe-card-nutrients__unit">(мг)</em>
+        <span class="recipe-card-nutrients__key">Углеводы
+          <em class="recipe-card-nutrients__unit">(г)</em>
         </span>
-        <span class="recipe-card-nutrients__value">89</span>
+        <span class="recipe-card-nutrients__value">22</span>
       </li>
       
-      <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Калий
-          <em class="recipe-card-nutrients__unit">(мг)</em>
-        </span>
-        <span class="recipe-card-nutrients__value">612</span>
-      </li>
-      
+
+      <div class="recipe-card__conditions">
+        Зрелый возраст
+      </div>
+
+
 
     </ul>
 
-    <a href="www.yandex.ru" class="recipe-card__link"></a>
+    <a href="javascript:void(0);" class="recipe-card__link"></a>
 
   </div>
 
@@ -827,9 +821,9 @@
     <div class="recipe-thumb__wrapper">
       <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-8.jpg" />
       <div class="recipe-thumb__gradient"></div>
-      <a class="recipe-thumb__label link--stealth" href="/">дессерты</a>
+       <a class="recipe-thumb__label link--stealth" href="javascript:void(0);">дессерты</a>
 
-      <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav">
+       <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav is-active">
         <svg class="icon icon-heart js-icon-fav">
           <use xlink:href="svg/sprite.svg#icon-heart"></use>
         </svg>
@@ -857,30 +851,29 @@
       </li>
       
       <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Докозапентаеновая (ДПК)
-          <em class="recipe-card-nutrients__unit">(мг)</em>
+        <span class="recipe-card-nutrients__key">Жиры
+          <em class="recipe-card-nutrients__unit">(г)</em>
         </span>
-        <span class="recipe-card-nutrients__value">80</span>
+        <span class="recipe-card-nutrients__value">3</span>
       </li>
       
       <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Натрий
-          <em class="recipe-card-nutrients__unit">(мг)</em>
+        <span class="recipe-card-nutrients__key">Углеводы
+          <em class="recipe-card-nutrients__unit">(г)</em>
         </span>
-        <span class="recipe-card-nutrients__value">89</span>
+        <span class="recipe-card-nutrients__value">22</span>
       </li>
       
-      <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Калий
-          <em class="recipe-card-nutrients__unit">(мг)</em>
-        </span>
-        <span class="recipe-card-nutrients__value">612</span>
-      </li>
-      
+
+      <div class="recipe-card__conditions">
+        Зрелый возраст
+      </div>
+
+
 
     </ul>
 
-    <a href="www.yandex.ru" class="recipe-card__link"></a>
+    <a href="javascript:void(0);" class="recipe-card__link"></a>
 
   </div>
 
@@ -891,9 +884,9 @@
     <div class="recipe-thumb__wrapper">
       <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-9.jpg" />
       <div class="recipe-thumb__gradient"></div>
-      <a class="recipe-thumb__label link--stealth" href="/">дессерты</a>
+       <a class="recipe-thumb__label link--stealth" href="javascript:void(0);">дессерты</a>
 
-      <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav">
+       <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav is-active">
         <svg class="icon icon-heart js-icon-fav">
           <use xlink:href="svg/sprite.svg#icon-heart"></use>
         </svg>
@@ -921,30 +914,29 @@
       </li>
       
       <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Докозапентаеновая (ДПК)
-          <em class="recipe-card-nutrients__unit">(мг)</em>
+        <span class="recipe-card-nutrients__key">Жиры
+          <em class="recipe-card-nutrients__unit">(г)</em>
         </span>
-        <span class="recipe-card-nutrients__value">80</span>
+        <span class="recipe-card-nutrients__value">3</span>
       </li>
       
       <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Натрий
-          <em class="recipe-card-nutrients__unit">(мг)</em>
+        <span class="recipe-card-nutrients__key">Углеводы
+          <em class="recipe-card-nutrients__unit">(г)</em>
         </span>
-        <span class="recipe-card-nutrients__value">89</span>
+        <span class="recipe-card-nutrients__value">22</span>
       </li>
       
-      <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Калий
-          <em class="recipe-card-nutrients__unit">(мг)</em>
-        </span>
-        <span class="recipe-card-nutrients__value">612</span>
-      </li>
-      
+
+      <div class="recipe-card__conditions">
+        Зрелый возраст
+      </div>
+
+
 
     </ul>
 
-    <a href="www.yandex.ru" class="recipe-card__link"></a>
+    <a href="javascript:void(0);" class="recipe-card__link"></a>
 
   </div>
 
@@ -955,9 +947,9 @@
     <div class="recipe-thumb__wrapper">
       <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-10.jpg" />
       <div class="recipe-thumb__gradient"></div>
-      <a class="recipe-thumb__label link--stealth" href="/">дессерты</a>
+       <a class="recipe-thumb__label link--stealth" href="javascript:void(0);">дессерты</a>
 
-      <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav">
+       <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav is-active">
         <svg class="icon icon-heart js-icon-fav">
           <use xlink:href="svg/sprite.svg#icon-heart"></use>
         </svg>
@@ -985,30 +977,29 @@
       </li>
       
       <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Докозапентаеновая (ДПК)
-          <em class="recipe-card-nutrients__unit">(мг)</em>
+        <span class="recipe-card-nutrients__key">Жиры
+          <em class="recipe-card-nutrients__unit">(г)</em>
         </span>
-        <span class="recipe-card-nutrients__value">80</span>
+        <span class="recipe-card-nutrients__value">3</span>
       </li>
       
       <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Натрий
-          <em class="recipe-card-nutrients__unit">(мг)</em>
+        <span class="recipe-card-nutrients__key">Углеводы
+          <em class="recipe-card-nutrients__unit">(г)</em>
         </span>
-        <span class="recipe-card-nutrients__value">89</span>
+        <span class="recipe-card-nutrients__value">22</span>
       </li>
       
-      <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Калий
-          <em class="recipe-card-nutrients__unit">(мг)</em>
-        </span>
-        <span class="recipe-card-nutrients__value">612</span>
-      </li>
-      
+
+      <div class="recipe-card__conditions">
+        Зрелый возраст
+      </div>
+
+
 
     </ul>
 
-    <a href="www.yandex.ru" class="recipe-card__link"></a>
+    <a href="javascript:void(0);" class="recipe-card__link"></a>
 
   </div>
 
@@ -1019,9 +1010,9 @@
     <div class="recipe-thumb__wrapper">
       <img class="recipe-thumb__image" src="img/thmbs/recipe-thumb-11.jpg" />
       <div class="recipe-thumb__gradient"></div>
-      <a class="recipe-thumb__label link--stealth" href="/">дессерты</a>
+       <a class="recipe-thumb__label link--stealth" href="javascript:void(0);">дессерты</a>
 
-      <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav">
+       <a href="javascript:void(0);" class="js-fav-btn recipe-thumb__fav is-active">
         <svg class="icon icon-heart js-icon-fav">
           <use xlink:href="svg/sprite.svg#icon-heart"></use>
         </svg>
@@ -1049,35 +1040,42 @@
       </li>
       
       <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Докозапентаеновая (ДПК)
-          <em class="recipe-card-nutrients__unit">(мг)</em>
+        <span class="recipe-card-nutrients__key">Жиры
+          <em class="recipe-card-nutrients__unit">(г)</em>
         </span>
-        <span class="recipe-card-nutrients__value">80</span>
+        <span class="recipe-card-nutrients__value">3</span>
       </li>
       
       <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Натрий
-          <em class="recipe-card-nutrients__unit">(мг)</em>
+        <span class="recipe-card-nutrients__key">Углеводы
+          <em class="recipe-card-nutrients__unit">(г)</em>
         </span>
-        <span class="recipe-card-nutrients__value">89</span>
+        <span class="recipe-card-nutrients__value">22</span>
       </li>
       
-      <li class="recipe-card-nutrients__item">
-        <span class="recipe-card-nutrients__key">Калий
-          <em class="recipe-card-nutrients__unit">(мг)</em>
-        </span>
-        <span class="recipe-card-nutrients__value">612</span>
-      </li>
-      
+
+      <div class="recipe-card__conditions">
+        Зрелый возраст
+      </div>
+
+
 
     </ul>
 
-    <a href="www.yandex.ru" class="recipe-card__link"></a>
+    <a href="javascript:void(0);" class="recipe-card__link"></a>
 
   </div>
 
 
 
+</div>
+
+  <div class="saved-recipes-empty">
+  <div class="saved-recipes-empty__text">
+    <h3 class="h3-heading">Список сохранённых рецептов пока пуст.</h3>
+    <p class="homebody">Вы ещё не занесли ни один из рецептов в свой список избранного. Это можно сделать нажав иконку с изображением сердца на карточке рецепта  или через ссылку "Избранные рецепты" в нижней части страницы отдельного рецепта.</p>
+  </div>
+  <img src="img/fav-example.png" alt=""><img src="img/fav-example-2.png" alt="">
 </div>
 
   <div class="pagination__wrapper">

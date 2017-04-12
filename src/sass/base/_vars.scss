@@ -14,7 +14,10 @@ $bold: 700;
 
 // Colors
 
-$primary: #81c5d8;
+
+
+// $primary: #81c5d8;
+$primary: #6bc2d9;
 $primary-link: #4da4bc;
 $primary-link-faded: #49afcb;
 $primary-bright: #abdce9;
@@ -24,11 +27,16 @@ $support-dos: #ff675b;
 $support-dos-bold: #f14c3f;
 $support-tres: #8ac143;
 
-$text-black: #3a3f4e;
-$text-normal: #6a6e7b;
-$text-pale: #b5b7bd;
+// $text-black: #3a3f4e;
+$text-black: #1f222d;
+// $text-normal: #6a6e7b;
+$text-normal: #3e424f;
+// $text-pale: #a8aab1;
+$text-pale: #a4a6b1;
 
-$sep-dark: #d8d9dc;
+// $sep-dark: #d8d9dc;
+$sep-dark: #bfc1c6;
+$sep-normal: #d8d9dc;
 $sep-light: #edeff3;
 
 $bg-cold: #f6f7f9;
@@ -43,7 +51,8 @@ $tint: rgba(255,255,255,.2);
 
 // Shadows
 
-$shadow-big: 0 2px 11px 0 rgba(66,137,157,.22);
+// $shadow-big: 0 2px 11px 0 rgba(66,137,157,.22);
+$shadow-big: 0 2px 15px 0 rgba(#1b2e4a, .3);
 
 
 

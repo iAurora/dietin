@@ -1,0 +1,35 @@
+{% set pageName = "saved" %}
+{% set pathology = "" %}
+{% set title = 'Сохранённые рецепты - Diet In' %}
+{% set description = 'Описание страницы' %}
+{% extends 'base.njk' %}
+
+{% block content -%}
+
+  <div class="width-container hor-padding-container">
+
+    <ul class="breadcrumbs breadcrumbs--single">
+      <li class="breadcrumbs__item"><a class="link--support link--support-on-white" href="#">Главная</a></li>
+      <li class="breadcrumbs__item">Сохранённые рецепты</li>
+    </ul>
+
+  </div>
+
+
+  <div class="width-container hor-padding-container ver-padding-xx-container">
+
+  <h1 class="section-heading">Сохранённые рецепты</h1>
+
+  {% include "partials/recipes-filter.njk" %}
+
+  {% include "partials/recipes-filter-sc.njk" %}
+
+  {% include "partials/recipes-saved-grid.njk" %}
+
+  {% include "partials/recipes-saved-empty.njk" %}
+
+  {% include "partials/pagination.njk" %}
+
+</div>
+
+{%- endblock %}

@@ -16,7 +16,8 @@ body {
   transition: top .2s ease-in-out;
 
   color: white;
-  background-color: #84c4d5;
+  // background-color: #84c4d5;
+  background-color: $primary;
 }
 
 .top-header__inner {

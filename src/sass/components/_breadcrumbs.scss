@@ -28,6 +28,8 @@
 
 .breadcrumbs--banner {
   z-index: 100;
+
+  border-top: 1px solid rgba($sep-dark, .25);
 }
 
 .breadcrumbs--single {
@@ -37,5 +39,7 @@
 @media screen and (min-width: 680px) {
   .breadcrumbs--single {
     display: block;
+
+    border-bottom: 1px solid $sep-light;
   }
 }
