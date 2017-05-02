@@ -1,6 +1,5 @@
 .form-input {
   display: block;
-  // width: 300px;
 
   width: 100%;
   height: 36px;
@@ -39,6 +38,14 @@
 
   border: 1px solid $primary;
   border-radius: 0;
+}
+
+.form-input--short {
+  max-width: 96px;
+}
+
+.form-input--nomargin {
+  margin-bottom: 0;
 }
 
 input:invalid {
@@ -119,10 +126,32 @@ input[type=checkbox].css-checkbox + label.css-label {
   background-position: 0 0;
 }
 
+input[type=checkbox].css-checkbox.checkbox-big + label.css-label {
+  font-size: 14px;
+  line-height: 18px;
+
+  display: inline-block;
+
+  height: 15px;
+  padding-left: 20px;
+
+  cursor: pointer;
+  vertical-align: middle;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+input[type=checkbox].css-checkbox.checkbox-big + label.css-label {
+  font-size: 14px;
+}
+
 input[type=checkbox].css-checkbox:checked + label.css-label {
   background-position: 0 -15px;
 }
-label.css-label {
+
+label.checkbox-label {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -158,7 +187,7 @@ input[type=radio].css-checkbox + label.css-label {
 input[type=radio].css-checkbox:checked + label.css-label {
   background-position: 0 -16px;
 }
-label.css-label {
+label.radio-label {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;

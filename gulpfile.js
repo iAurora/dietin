@@ -117,7 +117,7 @@ gulp.task('render', function() {
       path: ['src/templates/']
     }))
     .pipe(gulp.dest('dist'))
-    .pipe(notify({message: 'Templates done!'}));
+    .pipe(notify({message: 'Templates done!', onLast: true }));
 });
 
 // make sure render is complete when browsers reload

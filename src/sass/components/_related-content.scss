@@ -32,6 +32,12 @@
   }
 }
 
+// 960+
+@media screen and (min-width: 960px) {
+  .related-content--illustration {
+    flex: 0 0 380px;
+  }
+}
 
 // Inner styles
 

@@ -1,0 +1,206 @@
+.must-section {
+  line-height: 1.6;
+
+  max-width: 640px;
+  margin-top: 48px;
+  padding: 16px 32px 0;
+
+  border: 1px solid $sep-light;
+  border-top: 4px solid $primary;
+  border-radius: 2px;
+}
+
+
+.must-section__header {
+  line-height: 1.4;
+
+  position: relative;
+
+  padding: 0 44px 16px;
+
+  border-bottom: 1px dashed rgba(183, 183, 183, .3);
+}
+
+.must-section__header::before {
+  font-size: 52px;
+
+  position: absolute;
+  top: -16px;
+  left: 0;
+
+  color: rgba(183, 183, 183, .3);
+  color: $primary-bright;
+}
+
+.must-section__header--1::before {
+  content: '1';
+}
+
+.must-section__header--2::before {
+  content: '2';
+}
+
+.must-section__header--3::before {
+  content: '3';
+}
+
+.must-section__step {
+  font-size: 15px;
+  font-weight: $normal;
+  font-style: italic;
+
+  display: block;
+}
+
+.must-section__desc {
+  font-size: 14px;
+}
+
+.imt-index,
+.imt-value {
+  margin-bottom: 2px;
+}
+
+.imt-value {
+  font-size: 12px;
+
+  text-transform: uppercase;
+}
+
+.imt-value--normal,
+.weight-p__value--positive {
+  color: $support-tres;
+}
+
+.imt-value--seminormal {
+  color: $support-quatro;
+}
+
+.imt-value--abnormal,
+.weight-p__value--negative {
+  color: $support-dos;
+}
+
+.weight-p__value--zero {
+  color: $text-pale;
+}
+
+.calc-illustration {
+  display: block;
+
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  margin-top: 64px;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-left: auto;
+}
+
+.imt-index,
+.weight-p {
+  font-size: 13px;
+  font-weight: $bold;
+}
+
+.imt-index__value,
+.weight-p__value {
+  font-size: 16px;
+  font-weight: $normal;
+}
+
+
+.imt-calc__inputs {
+  display: flex;
+
+  margin: 24px 0;
+}
+
+.imt-calc__item {
+  margin-right: 16px;
+}
+
+.conditions {
+  padding: 2px;
+}
+
+.condition-acute {
+  margin-top: 0;
+}
+
+.must-score-result {
+  margin-top: 32px;
+  margin-right: -32px;
+  margin-left: -32px;
+
+  border-top: 1px dashed rgba(183, 183, 183, .3);
+  background-color: rgba(183, 183, 183, .1);
+  background-color: $bg-warm;
+}
+.must-score {
+  font-size: 13px;
+
+  margin: 0;
+  padding: 16px 32px;
+
+  color: $text-pale;
+}
+
+.must-score-total {
+  font-size: 14px;
+  line-height: 1.6;
+
+  max-width: 640px;
+  margin-top: 48px;
+}
+
+.must-score-total__result {
+  font-size: 15px;
+  font-weight: $bold;
+
+  padding: 8px 32px 12px;
+
+  text-align: center;
+
+  color: white;
+}
+
+.must-score-total__points {
+  font-size: 13px;
+  font-weight: $normal;
+  font-style: italic;
+  line-height: .8;
+
+  display: block;
+}
+
+.must-score-total__desc {
+  padding: 16px 32px;
+}
+
+.must-score-total--normal {
+  border: 4px solid $support-quatro;
+  .must-score-total__result {
+    background-color: $support-quatro;
+  }
+}
+
+.must-score-total--negative {
+  border: 4px solid $support-dos;
+  .must-score-total__result {
+    background-color: $support-dos;
+  }
+}
+
+.must-score-total--positive {
+  border: 4px solid $support-tres;
+  .must-score-total__result {
+    background-color: $support-tres;
+  }
+}
+
+.must-score-total--empty > .must-score-total__result {
+  font-weight: $normal;
+
+  background-color: $text-pale;
+}

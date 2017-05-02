@@ -1,0 +1,103 @@
+<form class="form calc-form" action="get" autocomplete="on">
+
+      <h1 class="section-heading">Скрининг MUST – 3 простых шага для оценки вашего питания</h1>
+
+      <div class="must-section must-section-one">
+
+        <h3 class="must-section__header must-section__header--1"><span class="must-section__step">Первый шаг</span>Калькулятор ИМТ</h3>
+        <p class="must-section__desc"><em>Индекс Массы Тела (ИМТ, англ. BMI)</em> показывает отношение вашего веса к росту, и позволяет оценить является ли оно недостаточным, нормальным или избыточным для человека вашего возраста. Обратите внимание, что для людей, активно занимающихся спортом, данный способ оценки не подходит из-за большого веса мышечной массы.</p>
+
+        <div class="imt-calc__inputs">
+
+          <div class="imt-calc__height imt-calc__item">
+            <label class="form-label" for="calcHeight">Рост</label>
+            <input class="form-input form-input--short form-input--nomargin " id="calcHeight" name="calcHeight" placeholder="163"/>
+          </div>
+
+          <div class="imt-calc__weight imt-calc__item">
+            <label class="form-label" for="calcWeight">Вес</label>
+            <input class="form-input form-input--short form-input--nomargin" id="calcWeight" name="calcWeight" placeholder="55.5"/>
+          </div>
+
+          <div class="imt-calc__age imt-calc__item">
+            <label class="form-label" for="calcAge">Возраст</label>
+            <input class="form-input form-input--short form-input--nomargin" id="calcAge" name="calcAge" placeholder="27"/>
+          </div>
+
+        </div>
+
+        <div class="imt-result">
+          <p class="imt-index">Ваш ИМТ: <span class="imt-index__value">25</span></p>
+          <p class="imt-value imt-value--normal">Нормальный вес</p>
+
+        </div>
+
+        <div class="must-score-result">
+          <p class="must-score">Баллы MUST: <span class="must-score__value">0</span></p>
+        </div>
+
+      </div> {# must section one #}
+
+      <div class="must-section must-section-two">
+
+        <h3 class="must-section__header must-section__header--2"><span class="must-section__step">Второй шаг</span>Оценка % изменения веса за полгода</h3>
+        <p class="must-section__desc">Как изменился ваш вес за последние 6 месяцев? Введите свой примерный вес полугодовалой давности и мы поможем оценить произошедшие изменения.</p>
+
+        <div class="imt-calc__inputs">
+
+          <div class="imt-calc__age">
+            <label class="form-label" for="calcPrevWeight">Прежний вес</label>
+            <input class="form-input form-input--short form-input--nomargin" id="calcPrevWeight" name="calcPrevWeight" placeholder="" value="55.5"/>
+          </div>
+
+        </div>
+
+        <div class="weight-p-result">
+          <p class="weight-p">Изменение веса: <span class="weight-p__value weight-p__value--negative">-10%</span></p>
+        </div>
+
+        <div class="must-score-result">
+          <p class="must-score">Баллы MUST: <span class="must-score__value">0</span></p>
+        </div>
+
+      </div> {# must section two #}
+
+      <div class="must-section must-section-two">
+
+        <h3 class="must-section__header must-section__header--3"><span class="must-section__step">Третий шаг</span>Оценка остроты заболевания</h3>
+
+        <p class="must-section__desc">Отметьте условия, если они соответствуют вашей ситуации.</p>
+
+        <div class="conditions">
+
+          <p class="condition-acute">
+            <input class="css-checkbox checkbox-big" type="checkbox" name="condition-acute" id="condition-acute" value="condition-acute" />
+            <label class="css-label checkbox-label" for="condition-acute">Моё заболевание острое</label>
+          </p>
+
+          <p class="condition-nonutrition">
+            <input class="css-checkbox checkbox-big" type="checkbox" name="condition-nonutrition" id="condition-nonutrition" value="condition-nonutrition" />
+            <label class="css-label checkbox-label" for="condition-nonutrition">Есть риск отсутствия питания в течение 5 дней (например, предстоит операция или обследование)</label>
+          </p>
+
+
+        </div>
+
+        <div class="must-score-result">
+          <p class="must-score">Баллы MUST: <span class="must-score__value">0</span></p>
+        </div>
+
+      </div> {# must section three #}
+
+      <div class="must-score-total must-score-total--normal">
+        <div class="must-score-total__result"><span class="must-score-total__points">1 балл</span>Средний риск</div>
+        <div class="must-score-total__desc">Обратите пристальное внимание на ваше питание и рацион. Рекомендуем обратиться к вашему лечащему врачу для подбора адекватного питания.</div>
+      </div>
+
+      <div class="must-score-total must-score-total--empty hidden">
+        <div class="must-score-total__result">Вы пока не ввели достаточно данных для оценки</div>
+      </div>
+
+
+
+    </form>
